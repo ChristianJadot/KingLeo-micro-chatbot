@@ -1,2 +1,3 @@
 # KingLeo-micro-chatbot
 Création d'une interface utilisateur avec Chatbot...
+Etape 1 : Création branch individuelle
