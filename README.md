@@ -1,6 +1,5 @@
 # KingLeo-micro-chatbot
-Création d'une interface utilisateur avec Chatbot...
-
+Création d'une interface utilisateur avec Chatbot...  
 #### Nathalie Anneessens | Guillaume-Leo | Robbert Klockaerts | Christian Jadot
 
 ***
@@ -71,19 +70,19 @@ Après cette réponse, le bot a terminé sa routine. Il dit "au revoir" à l'uti
 - compétences de conflit git
 
 <a name="Lien-vers-notre-chatbot"></a>
-## Lien vers notre chatbot
+## Lien vers notre chatbot  
 [Voici le KingLeo Micro Chatbot](lien à copier/coller ici)
 
 <a name="Page-Github"></a>
 ## Page Github
-L'ensemble des éléments "Pages et dossiers" ont été placés sur Github
+L'ensemble des éléments "Pages et dossiers" ont été placés sur Github.  
 Voici le repo sur [Github](https://github.com/ChristianJadot/KingLeo-micro-chatbot/)
 
 <a name=""></a>
 ## Mock-up
-Ci-dessous les mock-up du site KingLeo-micro-chatbot
-![Wireframe 1]()
-![Wireframe 2]()
-![Wireframe 3]()
-![Wireframe 4]()
-![Wireframe 5]()
+Ci-dessous les mock-up du site KingLeo-micro-chatbot.  
+![Wireframe 1]()  
+![Wireframe 2]()  
+![Wireframe 3]()  
+![Wireframe 4]()  
+![Wireframe 5]()  
