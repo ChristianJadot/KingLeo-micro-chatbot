@@ -5,13 +5,15 @@
 // bot say "I didn't understand, can you please try again"
 //! end loop----------
 
-
+//welcome messages + random message
 let welcomeMessages = ["Hi there buddy! How are You today?","Hey You! How's it going?","Well helo there! Tell me, How have you been?"];
 
 const randomIndex = Math.round(Math.random()*welcomeMessages.length);
 
+
 console.log(welcomeMessages[randomIndex]);
 
+//bot cannot understand + randomiser
 
 let endMessages = ["Try again please, my robot-ears aren't what they used to be!","I do not understand! Please repeat!","What kind of language are you speaking? In English please!"];
 
@@ -19,15 +21,38 @@ const randomIndex2 = Math.round(Math.random()*endMessages.length);
 
 console.log(endMessages[randomIndex2]);
 
+// yes + randomiser
+
 let YesAnwsers = ["Well that's good to hear! Keep it up!","Nice! Enjoying the good life right!","That's the way to do it!"];
 
+const randomIndex3 = Math.round(Math.random()*YesAnwsers.length);
 
+
+//no + randomiser 
 
 let NoAnwsers =["Don't worry to much. It will become better.","Sometime life sucks but i won't stay that way I promise.","I'm sorry I hope it gets better soon."];
 
+const randomIndex4 = Math.round(Math.random()*NoAnwsers.length);
+
+// goodbye
+
+let byeMessage = "See you around";
+
+// bot answers
+
 function robotAnswers() {
+  
+    if ( lastUserMessage.search(/\b(good|fine|top|very good)\b/i)) {
+     randomIndex3
+    }
+    else if ( lastUserMessage.search(/\b(bad|not so good|not|shitty|shit)\b/i)) {
+        randomIndex4}
+    
+    else  {randomIndex2};
 
 }    
+
+
 
 
 var historyOfMessages = []
