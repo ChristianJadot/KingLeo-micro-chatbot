@@ -39,7 +39,7 @@ function myFunction(event) {
 
         
 
-        userBox.value="hello you"; //userBox.defaultValue;
+        userBox.value=""; //userBox.defaultValue;
         
         newChatBox = document.createElement("textArea");
         newChatBox.setAttribute("type", "text");
