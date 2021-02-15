@@ -1,9 +1,9 @@
 # KingLeo-micro-chatbot
 Création d'une interface utilisateur avec Chatbot...
-Nathalie Anneessens - Guillaume-Leo - Robbert Klockaerts - Christian Jadot
+
+#### Nathalie Anneessens | Guillaume-Leo | Robbert Klockaerts | Christian Jadot
 
 ***
-
 
 ## Table des matières
 1. [Les Étapes](#Les-Etapes)
