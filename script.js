@@ -37,6 +37,30 @@ var lastUserMessage = "";
 
 
 
+function setSelectionRange(input, selectionStart, selectionEnd) {
+    if (input.setSelectionRange) {
+      input.focus();
+      input.setSelectionRange(selectionStart, selectionEnd);
+    } else if (input.createTextRange) {
+      var range = input.createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', selectionEnd);
+      range.moveStart('character', selectionStart);
+      range.select();
+    }
+  }
+  
+  function setCaretToPos(input, pos) {
+    setSelectionRange(input, pos, pos);
+  }
+
+
+
+
+  
+
+
+
 
 function userSpeak(event) {
     // We detect if the user is typing Enter or Shift-Enter
@@ -55,6 +79,7 @@ function userSpeak(event) {
         
             // Clear the userBox
             userBox.value=""; 
+            $('#userBox').val('');
         
             // BUBBLE CREATION with some properties
             newChatBox = document.createElement("textArea");
