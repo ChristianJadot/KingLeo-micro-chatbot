@@ -30,21 +30,17 @@ function robotAnswers() {
 }    
 
 
+
+
+
+
 var historyOfMessages = []
-
-
 var lastUserMessage = "";
 
 
 
 
-
-  
-
-
-
-
-function myFunction(event) {
+function userSpeak(event) {
     var x = event.which || event.keyCode;
     var shiftKeyPressed = event.shiftKey;
     if (x==13 && shiftKeyPressed == true) // Shift-Enter 
@@ -59,7 +55,6 @@ function myFunction(event) {
 
         
             // Clear the userBox
-            userBox.value=""; 
             $('#userBox').val('');
         
             // BUBBLE CREATION with some properties
@@ -72,13 +67,13 @@ function myFunction(event) {
             newChatBox.value = lastUserMessage;
             newChatBox.disabled = true;
             // get the number of lines to set the height of the bubble
-            nbOfLines = lastUserMessage.split('\n').length * 16.8; 
+            nbOfLines = (lastUserMessage.split('\n').length-1) * 16.8; 
             nbOfLinesToString = nbOfLines.toString()+"px";
             // set the height of the bubble
             newChatBox.style.height = nbOfLinesToString;
             // add this bubble to the html document
             document.getElementById('containerBulles').appendChild(newChatBox);
-        
+            robotAnswers();
 
     }
   }
