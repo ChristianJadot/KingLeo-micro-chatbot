@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/05be3ed2ff.js" crossorigin="anonymous"></script>
     <title>KingLeo Micro Chatbot</title>
 </head>
+
 <body>
-    <p> TEST Branche Front-end</p>
+    <header>
+        <h1>KingLeo-micro-chatbot</h1>
+    </header>
+    <main>
+        <section>
+            <div class="welcome">
+                <!-- A remplacer par l'image du robot -->
+                <img src="https://placekitten.com/100/100" alt="Placekitten">
+                <!-- Supprimer le contenu des paragraphes par après -->
+                <p id="welcoming-message">Salutations !</p>
+                <p id="question">How do you feel today?</p>
+            </div>
+            <form>
+                <textarea name="" id="text" cols="30" rows="2"></textarea>
+                <button id="submit" type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+
+    </main>
 </body>
+
 </html>

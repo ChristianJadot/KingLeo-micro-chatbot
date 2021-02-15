@@ -1,0 +1,87 @@
+/*----------------------MAIN-------------------------*/
+
+body
+{
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, 1fr;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main
+{
+    width: 95vw;
+    margin:0 auto;
+}
+
+/*----------------------HEADER-------------------------*/
+header 
+{
+    background-color: black;
+}
+header h1
+{
+    text-align: center;
+    color:#fff;
+}
+
+/*----------------------WELCOME-------------------------*/
+.welcome img
+{
+    display: block;
+    margin: 0 auto;
+}
+.welcome p
+{
+    text-align: center;
+}
+
+/*----------------------ANSWERS-------------------------*/
+.robot-answers
+{
+    border-radius: 8px 8px 8px 0px;
+}
+
+.user-answers
+{
+    border-radius: 8px 8px 0px 8px;
+}
+
+/*----------------------FORM-------------------------*/
+form
+{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 1fr;
+}
+
+form button, form textarea
+{
+    border: 1px solid #888888;
+    color: #888888;
+    background-color:#ffffff;
+    border-radius: 8px;
+}
+
+form textarea
+{
+    border-top-right-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+
+}
+
+form button
+{
+    border-top-left-radius: 0 ;
+    border-bottom-left-radius: 0 ;
+    padding: 0;
+    margin: 0;
+}
+
+form button i
+{
+    display: block;
+    margin: auto;
+}
