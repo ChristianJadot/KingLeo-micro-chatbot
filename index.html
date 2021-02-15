@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/05be3ed2ff.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05be3ed2ff.js" crossorigin="anonymous"></script>
     <title>KingLeo Micro Chatbot</title>
 </head>
 
@@ -18,12 +20,21 @@
     </header>
     <main>
         <section>
-            <div class="welcome">
+            <div id="welcome">
                 <!-- A remplacer par l'image du robot -->
                 <img src="https://placekitten.com/100/100" alt="Placekitten">
                 <!-- Supprimer le contenu des paragraphes par après -->
                 <p id="welcoming-message">Salutations !</p>
                 <p id="question">How do you feel today?</p>
+            </div>
+            <div id="old-messages">
+                <div class="robot-message">
+                    <img src="https://placekitten.com/40/40" alt="Placekitten" class="robot-avatar">
+                    <div class="robot-answers">Test blablablablablablablabla</div>
+                </div>
+                <div class="user-message">
+                    <div class="user-answers">Test blablablablablablablabla</div>
+                </div>
             </div>
             <form>
                 <textarea name="" id="text" cols="30" rows="2"></textarea>

@@ -28,25 +28,44 @@ header h1
 }
 
 /*----------------------WELCOME-------------------------*/
-.welcome img
+#welcome img
 {
     display: block;
     margin: 0 auto;
 }
-.welcome p
+#welcome p
 {
     text-align: center;
 }
 
 /*----------------------ANSWERS-------------------------*/
+.robot-message
+{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin: 10px 0;
+}
+
+.robot-avatar
+{
+    border-radius: 50%;
+}
 .robot-answers
 {
     border-radius: 8px 8px 8px 0px;
+    background-color: crimson;
+    padding: 10px 5px;
 }
-
+.user-message
+{
+    margin: 10px 0;
+    
+}
 .user-answers
 {
+    padding: 10px 5px;
     border-radius: 8px 8px 0px 8px;
+    background-color:darkmagenta;
 }
 
 /*----------------------FORM-------------------------*/
