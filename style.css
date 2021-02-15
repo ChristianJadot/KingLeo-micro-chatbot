@@ -6,7 +6,7 @@ body
     padding:0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto, 1fr;
+    grid-template-rows: auto 1fr;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,6 +16,12 @@ header, main
     margin:0 auto;
 }
 
+section
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-content: end;
+}
 /*----------------------HEADER-------------------------*/
 header 
 {
@@ -41,35 +47,43 @@ header h1
 /*----------------------ANSWERS-------------------------*/
 /*-------------------TO DO !!!!------------------------*/
 /* Adapter la taille de la bulle à la taille du message ! */
-/* Faire un align bottom pour les réponses ! */
+/* Faire un align bottom pour les réponses ! - OK */
 .robot-message
 {
     display: grid;
     grid-template-columns: 50px auto;
     margin: 10px 0;
+    /* align-content: end; */
 }
 
 .robot-avatar
 {
     border-radius: 50%;
+    align-self: end;
 }
 .robot-answers
 {
     border-radius: 8px 8px 8px 0px;
     background-color: crimson;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    width: fit-content;
 }
 .user-message
 {
     margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
     
 }
 .user-answers
 {
-    padding: 10px 5px;
+    padding: 10px 10px;
     border-radius: 8px 8px 0px 8px;
     background-color:darkmagenta;
     text-align: right;
+    width: fit-content;
+    
 }
 
 /*----------------------FORM-------------------------*/
