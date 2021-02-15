@@ -19,6 +19,17 @@ const randomIndex2 = Math.round(Math.random()*endMessages.length);
 
 console.log(endMessages[randomIndex2]);
 
+let YesAnwsers = ["Well that's good to hear! Keep it up!","Nice! Enjoying the good life right!","That's the way to do it!"];
+
+
+let NoAnwsers =["Don't worry to much. It will become better.","Sometime life sucks but i won't stay that way I promise.","I'm sorry I hope it gets better soon."];
+
+function robotYesAnswers() {
+
+    
+}
+
+
 
 var historyOfMessages = []
 
