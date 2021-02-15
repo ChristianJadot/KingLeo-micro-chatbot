@@ -22,39 +22,21 @@ console.log(endMessages[randomIndex2]);
 let YesAnwsers = ["Well that's good to hear! Keep it up!","Nice! Enjoying the good life right!","That's the way to do it!"];
 
 
+
 let NoAnwsers =["Don't worry to much. It will become better.","Sometime life sucks but i won't stay that way I promise.","I'm sorry I hope it gets better soon."];
 
-function robotYesAnswers() {
+function robotAnswers() {
 
-    
-}
-
+}    
 
 
 var historyOfMessages = []
+
 
 var lastUserMessage = "";
 
 
 
-function setSelectionRange(input, selectionStart, selectionEnd) {
-    if (input.setSelectionRange) {
-      input.focus();
-      input.setSelectionRange(selectionStart, selectionEnd);
-    } else if (input.createTextRange) {
-      var range = input.createTextRange();
-      range.collapse(true);
-      range.moveEnd('character', selectionEnd);
-      range.moveStart('character', selectionStart);
-      range.select();
-    }
-  }
-  
-  function setCaretToPos(input, pos) {
-    setSelectionRange(input, pos, pos);
-  }
-
-
 
 
   
@@ -62,8 +44,7 @@ function setSelectionRange(input, selectionStart, selectionEnd) {
 
 
 
-function userSpeak(event) {
-    // We detect if the user is typing Enter or Shift-Enter
+function myFunction(event) {
     var x = event.which || event.keyCode;
     var shiftKeyPressed = event.shiftKey;
     if (x==13 && shiftKeyPressed == true) // Shift-Enter 
@@ -98,6 +79,7 @@ function userSpeak(event) {
             // add this bubble to the html document
             document.getElementById('containerBulles').appendChild(newChatBox);
         
+
     }
   }
 
