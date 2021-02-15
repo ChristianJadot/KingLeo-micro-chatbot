@@ -6,6 +6,18 @@
 //! end loop----------
 
 
+let welcomeMessages = ["Hi there buddy! How are You today?","Hey You! How's it going?","Well helo there! Tell me, How have you been?"];
+
+const randomIndex = Math.round(Math.random()*welcomeMessages.length);
+
+console.log(welcomeMessages[randomIndex]);
+
+
+let endMessages = ["Try again please, my robot-ears aren't what they used to be!","I do not understand! Please repeat!","What kind of language are you speaking? In English please!"];
+
+const randomIndex2 = Math.round(Math.random()*endMessages.length);
+
+console.log(endMessages[randomIndex2]);
 
 
 var historyOfMessages = []
