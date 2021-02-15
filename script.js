@@ -19,7 +19,7 @@ let endMessages = ["Try again please, my robot-ears aren't what they used to be!
 
 const randomIndex2 = Math.round(Math.random()*endMessages.length);
 
-console.log(endMessages[randomIndex2]);
+
 
 // yes + randomiser
 
@@ -43,12 +43,13 @@ let byeMessage = "See you around";
 function robotAnswers() {
   
     if ( lastUserMessage.search(/\b(good|fine|top|very good)\b/i)) {
-     randomIndex3
+        console.log(YesAnwsers[randomIndex3])
     }
-    else if ( lastUserMessage.search(/\b(bad|not so good|not|shitty|shit)\b/i)) {
-        randomIndex4}
+    else if ( lastUserMessage.search(/\b(bad|not|shitty|shit)\b/i)) {
+        console.log(NoAnwsers[randomIndex3])}
     
-    else  {randomIndex2};
+    else  {console.log(endMessages[randomIndex2])};
+
 
 }    
 
@@ -63,13 +64,13 @@ var lastUserMessage = "";
 
 
 
-
-  
-
-
+var historyOfMessages = []
+var lastUserMessage = "";
 
 
-function myFunction(event) {
+
+
+function userSpeak(event) {
     var x = event.which || event.keyCode;
     var shiftKeyPressed = event.shiftKey;
     if (x==13 && shiftKeyPressed == true) // Shift-Enter 
@@ -84,7 +85,6 @@ function myFunction(event) {
 
         
             // Clear the userBox
-            userBox.value=""; 
             $('#userBox').val('');
         
             // BUBBLE CREATION with some properties
@@ -97,13 +97,13 @@ function myFunction(event) {
             newChatBox.value = lastUserMessage;
             newChatBox.disabled = true;
             // get the number of lines to set the height of the bubble
-            nbOfLines = lastUserMessage.split('\n').length * 16.8; 
+            nbOfLines = (lastUserMessage.split('\n').length-1) * 16.8; 
             nbOfLinesToString = nbOfLines.toString()+"px";
             // set the height of the bubble
             newChatBox.style.height = nbOfLinesToString;
             // add this bubble to the html document
             document.getElementById('containerBulles').appendChild(newChatBox);
-        
+            robotAnswers();
 
     }
   }
