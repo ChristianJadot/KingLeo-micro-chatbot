@@ -6,8 +6,10 @@ body
     padding:0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 10vh 90vh;
     font-family: 'Roboto', sans-serif;
+    /* min-height: 100vh; */
+    align-items: end;
 }
 
 header, main
@@ -21,11 +23,13 @@ section
     display: grid;
     grid-template-rows: auto auto auto;
     align-content: end;
+    position:relative;
 }
 /*----------------------HEADER-------------------------*/
 header 
 {
     background-color: black;
+    height: 10vh;
 }
 header h1
 {
@@ -45,9 +49,7 @@ header h1
 }
 
 /*----------------------ANSWERS-------------------------*/
-/*-------------------TO DO !!!!------------------------*/
-/* Adapter la taille de la bulle à la taille du message ! */
-/* Faire un align bottom pour les réponses ! - OK */
+
 .robot-message
 {
     display: grid;
@@ -95,6 +97,9 @@ form
     display: grid;
     grid-template-columns: 90% 10%;
     grid-template-rows: 1fr;
+    /* position:absolute; */
+    bottom:0;
+    padding:20px 0;
 }
 
 form button, form textarea
