@@ -39,10 +39,13 @@ header h1
 }
 
 /*----------------------ANSWERS-------------------------*/
+/*-------------------TO DO !!!!------------------------*/
+/* Adapter la taille de la bulle à la taille du message ! */
+/* Faire un align bottom pour les réponses ! */
 .robot-message
 {
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 50px auto;
     margin: 10px 0;
 }
 
@@ -66,9 +69,13 @@ header h1
     padding: 10px 5px;
     border-radius: 8px 8px 0px 8px;
     background-color:darkmagenta;
+    text-align: right;
 }
 
 /*----------------------FORM-------------------------*/
+/*----------------------TO DO------------------------*/
+/*Fixer le formulaire en bas*/
+
 form
 {
     display: grid;
