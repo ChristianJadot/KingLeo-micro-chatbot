@@ -15,5 +15,9 @@
 3. 
 
 ## Passive-agressive
+1. Try again please, my robot-ears aren't what they used to be!
+2. I do not understand! Please repeat!
+3. What kind of language are you speaking? In english please!
 
 ## Message de fin
+See you around!
