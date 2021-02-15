@@ -21,6 +21,7 @@ Création d'une interface utilisateur avec Chatbot...
 2. Création branch individuelles & FrontEnd / BackEnd
 3. Discussion sur le travail à réaliser
 4. Répartition des tâches Front / Back
+5. Démarrage de la Mission
 
 <a name="Organisation-du-travail"></a>
 ## Organisation du travail
