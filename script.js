@@ -27,36 +27,40 @@ var lastUserMessage = "";
 
 
 
-function myFunction(event) {
+function userSpeak(event) {
+    // We detect if the user is typing Enter or Shift-Enter
     var x = event.which || event.keyCode;
-    console.log(x);
     var shiftKeyPressed = event.shiftKey;
-    if (x==13 && shiftKeyPressed == true){null;}
-        else if (x==13){
+    if (x==13 && shiftKeyPressed == true) // Shift-Enter 
+    {null;}
+        else if (x==13){ // Just Enter
+            // assign the user textArea to a variable "userBox"
             userBox = document.getElementById('userBox');
+            // get the value of it and assign that text to "lastUserMessage"
             lastUserMessage = userBox.value;
+            // push this value into "historyOfMessages"
             historyOfMessages.push(lastUserMessage);
 
         
-
-        userBox.value=""; //userBox.defaultValue;
+            // Clear the userBox
+            userBox.value=""; 
         
-        newChatBox = document.createElement("textArea");
-        newChatBox.setAttribute("type", "text");
-        newChatBox.setAttribute("id", "bulle");
-        newChatBox.style.display = "block";
-        newChatBox.style.overflow = "hidden";
-        newChatBox.style.textAlign = "right";
-        newChatBox.value = lastUserMessage;
-        newChatBox.disabled = true;
-        nbOfLines = lastUserMessage.split('\n').length * 16.8; 
-        nbOfLinesToString = nbOfLines.toString()+"px";
-        userBox.setSelectionRange(10,0,"backward");
-
-
-        newChatBox.style.height = nbOfLinesToString;
-
-        document.getElementById('containerBulles').appendChild(newChatBox);
+            // BUBBLE CREATION with some properties
+            newChatBox = document.createElement("textArea");
+            newChatBox.setAttribute("type", "text");
+            newChatBox.setAttribute("id", "bulle");
+            newChatBox.style.display = "block";
+            newChatBox.style.overflow = "hidden";
+            newChatBox.style.textAlign = "right";
+            newChatBox.value = lastUserMessage;
+            newChatBox.disabled = true;
+            // get the number of lines to set the height of the bubble
+            nbOfLines = lastUserMessage.split('\n').length * 16.8; 
+            nbOfLinesToString = nbOfLines.toString()+"px";
+            // set the height of the bubble
+            newChatBox.style.height = nbOfLinesToString;
+            // add this bubble to the html document
+            document.getElementById('containerBulles').appendChild(newChatBox);
         
     }
   }
