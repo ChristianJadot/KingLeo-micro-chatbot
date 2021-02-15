@@ -22,57 +22,40 @@ console.log(endMessages[randomIndex2]);
 let YesAnwsers = ["Well that's good to hear! Keep it up!","Nice! Enjoying the good life right!","That's the way to do it!"];
 
 
+
 let NoAnwsers =["Don't worry to much. It will become better.","Sometime life sucks but i won't stay that way I promise.","I'm sorry I hope it gets better soon."];
 
-function robotYesAnswers() {
+function robotAnswers() {
 
-    
-}
-
+}    
 
 
 var historyOfMessages = []
+
 
 var lastUserMessage = "";
 
 
 
 
-function userSpeak(event) {
-    // We detect if the user is typing Enter or Shift-Enter
+function myFunction(event) {
     var x = event.which || event.keyCode;
     var shiftKeyPressed = event.shiftKey;
-    if (x==13 && shiftKeyPressed == true) // Shift-Enter 
-    {null;}
-        else if (x==13){ // Just Enter
-            // assign the user textArea to a variable "userBox"
-            userBox = document.getElementById('userBox');
-            // get the value of it and assign that text to "lastUserMessage"
-            lastUserMessage = userBox.value;
-            // push this value into "historyOfMessages"
-            historyOfMessages.push(lastUserMessage);
-
-        
-            // Clear the userBox
-            userBox.value=""; 
-        
-            // BUBBLE CREATION with some properties
-            newChatBox = document.createElement("textArea");
-            newChatBox.setAttribute("type", "text");
-            newChatBox.setAttribute("id", "bulle");
-            newChatBox.style.display = "block";
-            newChatBox.style.overflow = "hidden";
-            newChatBox.style.textAlign = "right";
-            newChatBox.value = lastUserMessage;
-            newChatBox.disabled = true;
-            // get the number of lines to set the height of the bubble
-            nbOfLines = lastUserMessage.split('\n').length * 16.8; 
-            nbOfLinesToString = nbOfLines.toString()+"px";
-            // set the height of the bubble
-            newChatBox.style.height = nbOfLinesToString;
-            // add this bubble to the html document
-            document.getElementById('containerBulles').appendChild(newChatBox);
-        
+    console.log(shiftKeyPressed);
+    if (x==13){
+        lastUserMessage = document.getElementById('userBox').value;
+        historyOfMessages.push(lastUserMessage);
+        document.getElementById('userBox').value = "";
+        newChatBox = document.createElement("textArea");
+        newChatBox.setAttribute("type", "text");
+        newChatBox.setAttribute("id", "bulle");
+        newChatBox.style.display = "block";
+        newChatBox.style.textAlign = "right";
+        // newChatBox.setAttribute("value", lastUserMessage);
+        newChatBox.value = lastUserMessage;
+        newChatBox.disabled = true;
+        document.getElementById('containerBulles').appendChild(newChatBox);
+        console.log(lastUserMessage);
     }
   }
 
