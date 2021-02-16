@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <h1>KingLeo-micro-chatbot</h1>
+        <img src="images/logo-chatbot.png" alt="Logo KingLeo-micro-chatbot">
     </header>
     <main>
         
@@ -30,15 +30,23 @@
             </div> -->
             <section id="old-messages">
                 <div class="robot-message">
-                    <img src="https://placekitten.com/40/40" alt="Placekitten" class="robot-avatar">
+                    <img src="images/robot-avatar.png" alt="Avatar KingLeo" width="40" height="40">
                     <div class="robot-answers">Récupération de l'id question ?<br>Simulation du message sur plusieurs lignes<br>BLablablablablabla</div>
                 </div>
                 <div class="user-message">
                     <div class="user-answers">Test blabla blabla blabla blabla</div>
                 </div>
+                <div class="robot-message">
+                    <img src="images/robot-avatar.png" alt="Avatar KingLeo" width="40" height="40">
+                    <div class="robot-answers">Récupération de l'id question ?<br>Simulation du message sur plusieurs lignes<br>BLablablablablabla</div>
+                </div>
+                <div class="user-message">
+                    <div class="user-answers">Test blabla blabla blabla blabla</div>
+                </div>
+                
             </section>
             <section id="form">
-                <textarea id="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                <textarea name ="message" id="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                 <button id="submit"><i class="fas fa-paper-plane"></i></button>
             </section>
     
