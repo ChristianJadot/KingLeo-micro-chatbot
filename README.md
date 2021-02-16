@@ -11,7 +11,7 @@ Création d'une interface utilisateur avec Chatbot...
 4. [Les Compétences](#Les-Compétences)
 5. [Lien vers notre chatbot](#Lien-vers-notre-chatbot)
 6. [Page Github](#Page-Github)
-7. [Mock-up](#Mock-up)
+7. [Layout](#Layout)
 
 ***
 
@@ -36,8 +36,18 @@ Création d'une interface utilisateur avec Chatbot...
 
 - Délais des réalisations
   - FrontEnd :
-    - 15/02 : Création du mockup, validation par l'équipe et démarrage de la mise en HTML/CSS...
-    - 16/02 :
+    - 15/02 : Création du layout, validation par l'équipe et démarrage de la mise en HTML/CSS.
+              Création du layout de la conversation.
+              Création de la structure dans le fichier html avec simulation de message et mise en page sommaire/fonctionnelle en CSS :
+              - Adapter la taille de la bulle à la taille du contenu.
+              - Aligner la bulle de l'utilisateur à droite.
+              - Fixer le formulaire avec le text-area en bas.
+    - 16/02 : Recherche du style visuel global, visuel du Bot, création d'un logo, interface générale, nuances.
+              Regarder comment empêcher le resizing manuel d'un "textarea".
+              Adapter le design avec les fichiers de Christian.
+              Faire un design de mobile pour tout le site.
+              Faire une recherche sur les iframes.
+              Intégrer le contenu.
     - 17/02 : ! Vérification Validation W3C ! .... Git Conflits ?.............. Remise du projet final
 
   - BackEnd :
@@ -56,7 +66,7 @@ L'utilisateur peut répondre librement, et le bot doit vérifier la réponse s'i
 si le script trouve un "oui" dans le message, le bot répond avec une phrase aléatoire d'un ensemble spécifique (minimum trois différents )
 si le script trouve un "non" dans le message, le bot répond avec une phrase aléatoire d'un ensemble spécifique (minimum trois différents )
 si le script ne trouve pas un "oui" ou un "non" dans le message, le bot répondra par exemple "Je n'ai pas compris, pouvez-vous réessayer s'il vous plaît"
-si le script ne peut pas trouver un "oui" ou un "non" dans le message après trois tentatives, le bot commence à être fou et utilise une réponse "passive-agressive", comme "mec, es-tu sûr que tu peux lire?"
+si le script ne peut pas trouver un "oui" ou un "non" dans le message après trois tentatives, le bot commence à être fou et utilise une réponse "passive-agressive", comme "mec, es-tu sûr que tu peux lire ?"
 Après cette réponse, le bot a terminé sa routine. Il dit "au revoir" à l'utilisateur et la zone de texte passe en disabledmode.
 #### Fonctionnalités bonus
 - Prend en charge les messages multilignes : en tapant SHIFT+ENTER, vous créez une nouvelle ligne dans la zone de texte.
@@ -80,7 +90,7 @@ L'ensemble des éléments "Pages et dossiers" ont été placés sur Github.
 Voici le repo sur [Github](https://github.com/ChristianJadot/KingLeo-micro-chatbot/)
 
 <a name=""></a>
-## Mock-up
+## Layout
 Ci-dessous les mock-up du site KingLeo-micro-chatbot.  
 ![Wireframe 1]()  
 ![Wireframe 2]()  
