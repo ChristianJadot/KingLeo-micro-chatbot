@@ -101,28 +101,34 @@ function userSpeak(event) {
         // push this value into "historyOfMessages"
         historyOfMessages.push(lastUserMessage);
 
+        newChatBoxChild = document.createElement('PRE');
+        newChatBoxChild.setAttribute('class','user-answers');
+        newChatBoxChild.innerHTML = lastUserMessage;
+        document.getElementById('old-message').appendChild(newChatBoxChild);
+
 
         // Clear the userBox
         $('#userBox').val('');
 
         // BUBBLE CREATION with some properties
-        newChatBox = document.createElement("textArea");
-        newChatBox.setAttribute("type", "text");
-        newChatBox.setAttribute("id", "bulle");
-        newChatBox.style.display = "block";
-        newChatBox.style.overflow = "hidden";
-        newChatBox.style.textAlign = "right";
-        newChatBox.value = lastUserMessage;
-        newChatBox.disabled = true;
-        // get the number of lines to set the height of the bubble
-        nbOfLines = (lastUserMessage.split('\n').length - 1) * 16.8;
-        nbOfLinesToString = nbOfLines.toString() + "px";
-        // set the height of the bubble
-        newChatBox.style.height = nbOfLinesToString;
-        // add this bubble to the html document
-        document.getElementById('containerBulles').appendChild(newChatBox);
+
         robotAnswers();
 
     }
 }
 
+// newChatBox = document.createElement("textArea");
+// newChatBox.setAttribute("type", "text");
+// newChatBox.setAttribute("id", "bulle");
+// newChatBox.style.display = "block";
+// newChatBox.style.overflow = "hidden";
+// newChatBox.style.textAlign = "right";
+// newChatBox.value = lastUserMessage;
+// newChatBox.disabled = true;
+// // get the number of lines to set the height of the bubble
+// nbOfLines = (lastUserMessage.split('\n').length - 1) * 16.8;
+// nbOfLinesToString = nbOfLines.toString() + "px";
+// // set the height of the bubble
+// newChatBox.style.height = nbOfLinesToString;
+// // add this bubble to the html document
+// document.getElementById('containerBulles').appendChild(newChatBox);

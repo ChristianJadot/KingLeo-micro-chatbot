@@ -1,4 +1,71 @@
 <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05be3ed2ff.js" crossorigin="anonymous"></script>
+    <title>KingLeo Micro Chatbot</title>
+</head>
+
+<body>
+    <header>
+        <h1>KingLeo-micro-chatbot</h1>
+    </header>
+    <main>
+        
+            <!-- <div id="welcome"> -->
+                <!-- A remplacer par l'image du robot -->
+                <!-- <img src="https://placekitten.com/100/100" alt="Placekitten"> -->
+                <!-- Supprimer le contenu des paragraphes par après -->
+                <!-- <p id="welcoming-message">Salutations !</p>
+                <p id="question">How do you feel today?</p>
+            </div> -->
+            <section id="old-messages">
+                <!-- <div class="robot-message">
+                    <img src="https://placekitten.com/40/40" alt="Placekitten" class="robot-avatar">
+                    <div class="robot-answers">Récupération de l'id question ?<br>Simulation du message sur plusieurs lignes<br>BLablablablablabla</div>
+                </div>
+                <div class="user-message">
+                    <div class="user-answers">Test blabla blabla blabla blabla</div>
+                </div> -->
+            </section>
+            <section id="form">
+                <textarea id="userBox" onkeyup="userSpeak(event)" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                <button id="submit"><i class="fas fa-paper-plane"></i></button>
+            </section>
+    
+    </main>
+
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,4 +83,4 @@
     <script src="jquery.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
+</html> -->

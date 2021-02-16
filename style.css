@@ -1,0 +1,150 @@
+
+
+
+/*----------------------MAIN-------------------------*/
+@font-face
+{
+    font-family: "norwester";
+    src: url("fonts/norwester.otf");
+}
+body
+{
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 90vh;
+    font-family: 'Roboto', sans-serif;
+    /* min-height: 100vh; */
+    align-items: end;
+}
+
+header, main
+{
+    width: 95vw;
+    margin:0 auto;
+}
+
+main
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-content: end;
+    position:relative;
+}
+
+pre
+{
+    font-family: 'Roboto Mono', monospace;
+}
+/*----------------------HEADER-------------------------*/
+header 
+{
+    background-color: black;
+    height: 10vh;
+}
+header h1
+{
+    font-family: "norwester";
+    text-align: center;
+    color:#fff;
+}
+
+/*----------------------WELCOME-------------------------*/
+#welcome img
+{
+    display: block;
+    margin: 0 auto;
+}
+#welcome p
+{
+    text-align: center;
+}
+
+/*----------------------ANSWERS-------------------------*/
+
+.robot-message
+{
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin: 10px 0;
+    overflow: auto;
+}
+
+.robot-avatar
+{
+    border-radius: 50%;
+    align-self: end;
+}
+.robot-answers
+{
+    border-radius: 8px 8px 8px 0px;
+    background-color: crimson;
+    padding: 10px 10px;
+    width: fit-content;
+}
+.user-message
+{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    
+}
+.user-answers
+{
+    padding: 10px 10px;
+    border-radius: 8px 8px 0px 8px;
+    background-color:darkmagenta;
+    text-align: right;
+    width: fit-content;
+    
+}
+
+/*----------------------FORM-------------------------*/
+/*----------------------TO DO------------------------*/
+/*Fixer le formulaire en bas*/
+
+#form
+{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 1fr;
+    padding:20px 0;
+}
+
+#form button, #form textarea
+{
+    border: 1px solid #888888;
+    color: #888888;
+    background-color:#ffffff;
+    border-radius: 8px;
+}
+
+#form textarea
+{
+    border-top-right-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+
+}
+
+#form button
+{
+    border-top-left-radius: 0 ;
+    border-bottom-left-radius: 0 ;
+    padding: 0;
+    margin: 0;
+}
+
+#form button i
+{
+    display: block;
+    margin: auto;
+}
+
+#form textarea
+{
+
+    resize: none;
+
+}
