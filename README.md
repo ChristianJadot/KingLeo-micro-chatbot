@@ -36,24 +36,32 @@ Création d'une interface utilisateur avec Chatbot...<br>
 
 - Délais des réalisations
   - FrontEnd :
-    - 15/02 : Création du layout, validation par l'équipe et démarrage de la mise en HTML/CSS.<br>
-              Création du layout de la conversation.<br>
-              Création de la structure dans le fichier html avec simulation de message et mise en page sommaire/fonctionnelle en CSS :<br>
-              - Adapter la taille de la bulle à la taille du contenu.<br>
-              - Aligner la bulle de l'utilisateur à droite.<br>
-              - Fixer le formulaire avec le text-area en bas.<br>
-    - 16/02 : Recherche du style visuel global, visuel du Bot, création d'un logo, interface générale, nuances.<br>
-              Regarder comment empêcher le resizing manuel d'un "textarea".<br>
-              Adapter le design avec les fichiers de Christian.<br>
-              Faire un design de mobile pour tout le site.<br>
-              Faire une recherche sur les iframes.<br>
-              Intégrer le contenu.<br>
-    - 17/02 : ! Vérification Validation W3C ! .... Git Conflits ?.............. Remise du projet final<br>
+    - 15/02 :
+      - Création du layout, validation par l'équipe et démarrage de la mise en HTML/CSS.<br>
+      - Création du layout de la conversation.<br>
+      - Création de la structure dans le fichier html avec simulation de message et mise en page sommaire/fonctionnelle en CSS :<br>
+        - Adapter la taille de la bulle à la taille du contenu.<br>
+        - Aligner la bulle de l'utilisateur à droite.<br>
+        - Fixer le formulaire avec le text-area en bas.<br>
+    - 16/02 :
+      - Recherche du style visuel global, visuel du Bot, création d'un logo, interface générale, nuances.<br>
+      - Regarder comment empêcher le resizing manuel d'un "textarea".<br>
+      - Adapter le design avec les fichiers de Christian.<br>
+      - Faire un design de mobile pour tout le site.<br>
+      - Faire une recherche sur les iframes.<br>
+      - Intégrer le contenu.<br>
+    - 17/02 :
+      - ! Vérification Validation W3C ! ....
+      - Git Conflits ?.............
+      - Remise du projet final<br>
 
   - BackEnd :
-    - 15/02 : Tests sur les séquences des messages, analyse des faisabilités pour l'insertion de message dans du "textarea" et vérifier les dispositions des éléments dans l'ordre souhaité, vertical de bas en haut (saisie des messages dans le bas de la fenêtre, tandis que l'historique de ces messages se placent au-dessus de la saisie dans le sens, le plus ancien dans le haut de la liste) et gauche et droite, gauche pour les messages du "bot", droite pour les messages "utilisateurs"...
-    - 16/02 : 
-    - 17/02 : 
+    - 15/02 :
+      - Tests sur les séquences des messages, analyse des faisabilités pour l'insertion de message dans du "textarea" et vérifier les dispositions des éléments dans l'ordre souhaité, vertical de bas en haut (saisie des messages dans le bas de la fenêtre, tandis que l'historique de ces messages se placent au-dessus de la saisie dans le sens, le plus ancien dans le haut de la liste) et gauche et droite, gauche pour les messages du "bot", droite pour les messages "utilisateurs"...
+    - 16/02 :
+      - 
+    - 17/02 :
+      - 
 
 <a name="La-Mission"></a>
 ## La Mission
