@@ -34,7 +34,7 @@ let byeMessage = "See you around";
 
 // if counter
 var counter = 0;
-var lastRobotMessage = "yes";
+var lastRobotMessage = "";
 
 function robotAnswers() {
 
@@ -42,6 +42,7 @@ function robotAnswers() {
 
         if (lastUserMessage.includes("yes")){
             isPositive++;
+
         };
         if(lastUserMessage.includes("no")){
             isPositive--;
@@ -50,11 +51,13 @@ function robotAnswers() {
 
     
     if (isPositive>0){
-        // IS POSITIVE
+       lastRobotMessage = YesAnwsers[randomIndex3]
     }else if (isPositive<0){
-        // IS NEGATIVE
-    }else{
-        // DON'T UNDERSTAND
+        lastRobotMessage = NoAnwsers[randomIndex4]
+    }else{ counter++;
+         if (counter <= 3){
+        lastRobotMessage = endMessages[randomIndex2]}
+        else {lastRobotMessage = byeMessage}
     }
 
     Robotbubble = document.createElement("PRE");
