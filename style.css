@@ -64,12 +64,13 @@ header img
 #old-messages
 {
     color : #ffffff;
+    background-color: #ebdef3;
     overflow-y: scroll;
 }
 .robot-message
 {
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 70px auto;
     margin: 10px 0;
     overflow: auto;
 }
@@ -78,6 +79,8 @@ header img
 {
     border-radius: 50%;
     align-self: end;
+    background-color: #ffffff;
+    margin-left: 10px;
 }
 
 
@@ -105,6 +108,7 @@ header img
     background: linear-gradient(90deg, rgba(159,25,171,1) 3%, rgba(255,99,206,1) 100%);
     text-align: right;
     width: fit-content;
+    margin-right: 10px;
     
 }
 
