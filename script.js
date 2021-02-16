@@ -34,7 +34,7 @@ let byeMessage = "See you around";
 
 // if counter
 var counter = 0;
-var lastRobotMessage = "";
+var lastRobotMessage = "yoyo";
 
 function robotAnswers() {
 
@@ -57,8 +57,40 @@ function robotAnswers() {
         // DON'T UNDERSTAND
     }
 
+
+    Robotbubble = document.createElement("PRE");
+    Robotbubble.classList.add("robot-answers");
+    Robotbubble.innerHTML = lastRobotMessage;
+    RobotbubbleParent = document.createElement("DIV");
+    RobotbubbleParent.classList.add("robot-message");
+    RobotbubbleParent.appendChild(Robotbubble);
+    document.getElementById('old-messages').append(RobotbubbleParent);
+
+
 }
 
+
+
+
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  
+
+
+  async function waitAndAnswer(){
+      for (var i = 0 ; i<10;i++){
+        document.getElementById('loading').innerHTML = "robot is thinking.";
+        await sleep(100);
+        document.getElementById('loading').innerHTML = "robot is thinking..";
+        await sleep(100);
+        document.getElementById('loading').innerHTML = "robot is thinking...";
+        await sleep(100);  
+    }
+      document.getElementById('loading').innerHTML = "";
+      robotAnswers();
+  }
 
 
 
@@ -103,8 +135,8 @@ function userSpeak(event) {
         newChatBox.style.height = nbOfLinesToString;
         // add this bubble to the html document
         // BUT HERE SOMETHING IMPORTANT WE PUT THE TWO NESTED ELEMENT PREVIOUSLY CREATED INSIDE THE ELEMENT "old-messages"
-        document.getElementById('old-messages').appendChild(newChatBoxParent);
-        robotAnswers();
+        document.getElementById('old-messages').append(newChatBoxParent);
+        waitAndAnswer()
 
     }
 }
@@ -138,7 +170,7 @@ document.getElementById('send').addEventListener('click', () => {
     newChatBox.style.height = nbOfLinesToString;
     // add this bubble to the html document
     document.getElementById('old-messages').appendChild(newChatBoxParent);
-    robotAnswers();
+    waitAndAnswer()
 })
 
 
