@@ -94,6 +94,32 @@ function sleep(ms) {
       robotAnswers();
   }
 
+  
+
+async function Welcome(){
+    for (var i = 0 ; i<10;i++){
+        document.getElementById('loading').innerHTML = "robot is thinking.";
+        await sleep(100);
+        document.getElementById('loading').innerHTML = "robot is thinking..";
+        await sleep(100);
+        document.getElementById('loading').innerHTML = "robot is thinking...";
+        await sleep(100);  
+    }
+    document.getElementById('loading').innerHTML = "";
+    lastRobotMessage = welcomeMessages[randomIndex];
+    Robotbubble = document.createElement("PRE");
+    Robotbubble.classList.add("robot-answers");
+    Robotbubble.innerHTML = lastRobotMessage;
+    RobotbubbleParent = document.createElement("DIV");
+    RobotbubbleParent.classList.add("robot-message");
+    RobotbubbleParent.appendChild(Robotbubble);
+    document.getElementById('old-messages').append(RobotbubbleParent);
+}
+Welcome();
+
+    
+   
+  
 
 
 var historyOfMessages = []
