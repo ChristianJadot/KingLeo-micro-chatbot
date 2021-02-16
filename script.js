@@ -40,6 +40,9 @@ let byeMessage = "See you around";
 
 // bot answers
 
+
+var counter = 0;
+
 function robotAnswers() {
 
     var positiveWords = /"can't complain"|great|"not bad"|"not so bad"|good|top|fine|"very good"|yes/g;
@@ -59,18 +62,18 @@ console.log(isNegative);
 
 
 
-    // console.log(lastUserMessage.match(positiveWords)!=null);
-
-
     if (isPositive>isNegative) {
         console.log(YesAnwsers[randomIndex3])
     }
     else if (isNegative<isPositive) {
         console.log(NoAnwsers[randomIndex3])
     }
-    else { console.log(endMessages[randomIndex2]) };
-
-
+    else {
+        counter ++;
+        if (counter < 3)
+        {console.log(endMessages[randomIndex2])}
+        else {console.log("I don't have time for this !")}
+          };
 }
 
 
