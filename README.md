@@ -92,8 +92,4 @@ Voici le repo sur [Github](https://github.com/ChristianJadot/KingLeo-micro-chatb
 <a name=""></a>
 ## Layout
 Ci-dessous les mock-up du site KingLeo-micro-chatbot.  
-![Wireframe 1]()  
-![Wireframe 2]()  
-![Wireframe 3]()  
-![Wireframe 4]()  
-![Wireframe 5]()  
+![Wireframe 1](layout-brouillon/layout-papier.jpg)<br>
