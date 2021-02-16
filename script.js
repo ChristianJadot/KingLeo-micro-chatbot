@@ -34,7 +34,7 @@ let byeMessage = "See you around";
 
 // if counter
 var counter = 0;
-var lastRobotMessage = "";
+var lastRobotMessage = "yes";
 
 function robotAnswers() {
 
@@ -57,6 +57,14 @@ function robotAnswers() {
         // DON'T UNDERSTAND
     }
 
+    Robotbubble = document.createElement("PRE");
+    Robotbubble.classList.add("robot-answers");
+    Robotbubble.innerHTML = lastRobotMessage;
+    RobotbubbleParent = document.createElement("DIV");
+    RobotbubbleParent.classList.add("robot-message");
+    RobotbubbleParent.appendChild(Robotbubble);
+    document.getElementById('old-messages').appendChild(RobotbubbleParent);
+    
 }
 
 
@@ -139,7 +147,12 @@ document.getElementById('send').addEventListener('click', () => {
     // add this bubble to the html document
     document.getElementById('old-messages').appendChild(newChatBoxParent);
     robotAnswers();
+
+
+
+
 })
+
 
 
 
