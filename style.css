@@ -1,5 +1,9 @@
 /*----------------------MAIN-------------------------*/
-
+@font-face
+{
+    font-family: "norwester";
+    src: url("fonts/norwester.otf");
+}
 body
 {
     margin:0;
@@ -38,6 +42,7 @@ header
 }
 header h1
 {
+    font-family: "norwester";
     text-align: center;
     color:#fff;
 }
