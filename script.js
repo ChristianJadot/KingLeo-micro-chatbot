@@ -8,16 +8,16 @@
 //welcome messages + random message
 let welcomeMessages = ["Hi there buddy! How are You today?", "Hey You! How's it going?", "Well helo there! Tell me, How have you been?"];
 
-const randomIndex = Math.round(Math.random() * welcomeMessages.length);
+const randomIndex = Math.round(Math.random() * (welcomeMessages.length-1));
 
-
+console.log(randomIndex);
 console.log(welcomeMessages[randomIndex]);
 
 //bot cannot understand + randomiser
 
 let endMessages = ["Try again please, my robot-ears aren't what they used to be!", "I do not understand! Please repeat!", "What kind of language are you speaking? In English please!"];
 
-const randomIndex2 = Math.round(Math.random() * endMessages.length);
+const randomIndex2 = Math.round(Math.random() * (endMessages.length-1));
 
 
 
@@ -25,14 +25,14 @@ const randomIndex2 = Math.round(Math.random() * endMessages.length);
 
 let YesAnwsers = ["Well that's good to hear! Keep it up!", "Nice! Enjoying the good life right!", "That's the way to do it!"];
 
-const randomIndex3 = Math.round(Math.random() * YesAnwsers.length);
+const randomIndex3 = Math.round(Math.random() * (YesAnwsers.length-1));
 
 
 //no + randomiser 
 
 let NoAnwsers = ["Don't worry to much. It will become better.", "Sometime life sucks but i won't stay that way I promise.", "I'm sorry I hope it gets better soon."];
 
-const randomIndex4 = Math.round(Math.random() * NoAnwsers.length);
+const randomIndex4 = Math.round(Math.random() * (NoAnwsers.length-1));
 
 // goodbye
 
@@ -40,14 +40,13 @@ let byeMessage = "See you around";
 
 // bot answers
 
-
+// if counter
 var counter = 0;
 
 function robotAnswers() {
 
-    var positiveWords = /"can't complain"|great|"not bad"|"not so bad"|good|top|fine|"very good"|yes/g;
-    var negativeWords = /bad|not|shitty|shit|not good|no/g;
-
+    var positiveWords = /(can't complain)|(great)|(not bad)|(not so bad)|(good)|(top)|(fine)|(very good)|(yes)/g;
+    var negativeWords = /not so good|not/g; //bad|not( so good)?|shitty|shit|not good|no|not
 
 
 
@@ -55,22 +54,18 @@ function robotAnswers() {
     isNegative = lastUserMessage.match(negativeWords) == null ? [] : lastUserMessage.match(negativeWords).length;
 
 
-console.log(lastUserMessage.match(positiveWords));
-console.log(lastUserMessage.match(negativeWords));
+    console.log(lastUserMessage.match(positiveWords));
+    console.log(lastUserMessage.match(negativeWords));
 
-console.log(isNegative);
-
-
-
-    if (isPositive>isNegative) {
+    if (isPositive>=isNegative && isPositive>0) {
         console.log(YesAnwsers[randomIndex3])
     }
-    else if (isNegative<isPositive) {
+    else if (isNegative>isPositive) {
         console.log(NoAnwsers[randomIndex3])
     }
     else {
         counter ++;
-        if (counter < 3)
+        if (counter <= 3)
         {console.log(endMessages[randomIndex2])}
         else {console.log("I don't have time for this !")}
           };
