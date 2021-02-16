@@ -5,4 +5,16 @@
     - [x] Adapter la taille de la bulle à la taille du contenu
     - [x] Aligner la bulle de l'utilisateur à droite 
     - [x] Fixer le formulaire avec le text-area en bas 
-    - [ ] Regarder comment empecher le resizing manuel d'un text-area [Pour demain !]
+
+## 16/02/2020
+**Design**
+- [x] Regarder comment empecher le resizing manuel d'un text-area
+- [ ] Adapter le design avec les fichiers de Christian
+- [ ] Faire un design de mobile pour tout le site
+- [ ] Faire une recherche sur les iframes
+- [ ] Integrer le contenu  
+
+
+
+## Phase de polish
+- [ ] Text-area qui s'adapte à la longueur du texte

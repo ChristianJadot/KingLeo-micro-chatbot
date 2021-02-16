@@ -18,7 +18,7 @@ header, main
     margin:0 auto;
 }
 
-section
+main
 {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -60,7 +60,7 @@ header h1
     display: grid;
     grid-template-columns: 50px auto;
     margin: 10px 0;
-    /* align-content: end; */
+    overflow: auto;
 }
 
 .robot-avatar
@@ -132,4 +132,11 @@ header h1
 {
     display: block;
     margin: auto;
+}
+
+#form textarea
+{
+
+    resize: none;
+
 }
