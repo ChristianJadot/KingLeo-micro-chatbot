@@ -73,6 +73,7 @@ header img
     background-color: #ebdef3;
     /* background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6); */
     overflow-y: scroll;
+    align-content: flex-end;
     max-height:70vh;
 }
 .robot-message

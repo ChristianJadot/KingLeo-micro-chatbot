@@ -29,7 +29,7 @@
                 <p id="question">How do you feel today?</p>
             </div> -->
             <section id="old-messages">
-                <div class="robot-message">
+                <!-- <div class="robot-message">
                     <img class="robot-avatar" src="images/robot-avatar-happy.png" alt="Avatar KingLeo" width="50" height="50">
                     <div class="robot-answers"><pre>Récupération de l'id question ?<br>Simulation du message sur plusieurs lignes<br>BLablablablablabla</pre></div>
                 </div>
@@ -64,15 +64,21 @@
                 <div class="user-message">
                     <div class="user-answers"><pre>Test blabla blabla blabla blabla<br>BLablablabla seconde ligne de texte du robot</pre></div>
                 </div>
-                
+                 -->
                 
             </section>
+            <div id="loading"></div>
             <section id="form">
-                <textarea name ="message" id="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                <button id="submit"><i class="fas fa-paper-plane"></i></button>
+                <textarea name ="message" id="userBox" onkeyup="userSpeak(event)" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                <button id="send"><i class="fas fa-paper-plane"></i></button>
             </section>
     
     </main>
+
+
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+
 </body>
 
 </html>
