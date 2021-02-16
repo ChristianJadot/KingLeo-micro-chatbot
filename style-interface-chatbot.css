@@ -30,8 +30,8 @@ main
     grid-template-rows: 1fr auto;
     /* align-content: end; */
     position:relative;
-    background-color: #ebdef3;
-    /* background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6); */
+    /* background-color: #ebdef3; */
+    background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6);
     border-radius: 0 0 20px 20px;
 }
 
@@ -70,17 +70,27 @@ header img
 #old-messages
 {
     color : #ffffff;
-    background-color: #ebdef3;
-    /* background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6); */
+    /* background-color: #ebdef3; */
+    background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6);
     overflow-y: scroll;
     max-height:70vh;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+
+
+}
+
+#old-message div:last-child
+{
+    margin-top: 20px;
 }
 .robot-message
 {
     display: grid;
     grid-template-columns: 70px auto;
     margin: 10px 0;
-    overflow: auto;
+    
 }
 
 .robot-avatar

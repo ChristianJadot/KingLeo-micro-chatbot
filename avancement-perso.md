@@ -9,23 +9,26 @@
 ## 16/02/2020
 **Design**
 - [x] Regarder comment empecher le resizing manuel d'un text-area
-- [x] Text-area qui s'adapte à la longueur du texte
-- [x] Adapter le design avec les fichiers de Christian
-- [x] Tester enlever les margin en trop des <pre> ! UI
-- [x] Forcer le Roboto pour les <pre> et voir si ca fonctionne. 
-- [ ] Resoudre les barres de scrolling pas utiles **EN COURS**
-- [ ] Adapter la hauteur de old message **EN COURS**
-
-- [ ] Créer la maquette de la page de présentation
-- [ ] Créer la page de présentation
-- [ ] Faire en sorte que old message affiche la barre et que le heigth de body reste à 100%/vh
-- [ ] Faire un design de mobile pour tout le site
-- [ ] Faire une recherche sur les iframes
-- [ ] Integrer le contenu  
-
+- [x] Text-area qui s'adapte à la longueur du texte 
+- [x] Adapter le design avec les fichiers de Christian (couleurs, avatars, import du logo dans le header)
+- [x] Enlever les margin en trop des balises pre ! 
+- [x] Forcer le Roboto pour les balise pre et voir si ca fonctionne. 
+- [x] Changer pour le background v2
+- [x] Mettre un max heigth pour qu'il n'y ait qu'une barre de scroll pour la partie des anciens messages et pas sur l'entiereté de l'interface
+- [ ] ~~Créer la maquette de la page de présentation~~ -> Délégué à Christian
+- [ ] ~~Créer la page de présentation~~ -> Délégué à Christian
+- [x] Inclure les typos et une hauteur de 100vh dans la page de présentation
 
 ## 17/02/2020
 - [ ] Ne pas paniquer
+- [x] Faire en sorte que les messages démarrent d'en bas (Merci Guillaume !)
+- [ ] Resoudre les barres de scrolling pas utiles
+- [ ] Adapter la hauteur de old message 
+- [ ] Limiter la longueur du text area à 3 lignes
+- [ ] Faire en sorte que old message affiche la barre et que le heigth de body reste à 100%/vh
+- [ ] Faire un design mobile pour toute l'interface
+- [ ] Adapter l'interface à la page de présentation
+- [ ] Colorier les bordures et l'icone du form
 
 ## Phase de polish
 - [ ] Utiliser les têtes différentes pour le robot en fonction des emotions (pour le moment y'en a 3)
