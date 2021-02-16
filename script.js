@@ -42,6 +42,7 @@ function robotAnswers() {
 
         if (lastUserMessage.includes("yes")){
             isPositive++;
+
         };
         if(lastUserMessage.includes("no")){
             isPositive--;
@@ -50,13 +51,14 @@ function robotAnswers() {
 
     
     if (isPositive>0){
-        // IS POSITIVE
+       lastRobotMessage = YesAnwsers[randomIndex3]
     }else if (isPositive<0){
-        // IS NEGATIVE
-    }else{
-        // DON'T UNDERSTAND
+        lastRobotMessage = NoAnwsers[randomIndex4]
+    }else{ counter++;
+         if (counter <= 3){
+        lastRobotMessage = endMessages[randomIndex2]}
+        else {lastRobotMessage = byeMessage}
     }
-
 
     Robotbubble = document.createElement("PRE");
     Robotbubble.classList.add("robot-answers");
@@ -172,6 +174,7 @@ document.getElementById('send').addEventListener('click', () => {
     document.getElementById('old-messages').appendChild(newChatBoxParent);
     waitAndAnswer()
 })
+
 
 
 
