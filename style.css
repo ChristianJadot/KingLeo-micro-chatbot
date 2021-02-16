@@ -92,17 +92,15 @@ header h1
 /*----------------------TO DO------------------------*/
 /*Fixer le formulaire en bas*/
 
-form
+#form
 {
     display: grid;
     grid-template-columns: 90% 10%;
     grid-template-rows: 1fr;
-    /* position:absolute; */
-    bottom:0;
     padding:20px 0;
 }
 
-form button, form textarea
+#form button, #form textarea
 {
     border: 1px solid #888888;
     color: #888888;
@@ -110,14 +108,14 @@ form button, form textarea
     border-radius: 8px;
 }
 
-form textarea
+#form textarea
 {
     border-top-right-radius: 0 ;
     border-bottom-right-radius: 0 ;
 
 }
 
-form button
+#form button
 {
     border-top-left-radius: 0 ;
     border-bottom-left-radius: 0 ;
@@ -125,7 +123,7 @@ form button
     margin: 0;
 }
 
-form button i
+#form button i
 {
     display: block;
     margin: auto;
