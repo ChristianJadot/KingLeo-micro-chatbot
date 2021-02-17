@@ -46,22 +46,44 @@ Création d'une interface utilisateur avec Chatbot...<br>
     - 16/02 :
       - Recherche du style visuel global, visuel du Bot, création d'un logo, interface générale, nuances.<br>
       - Regarder comment empêcher le resizing manuel d'un "textarea".<br>
-      - Adapter le design avec les fichiers de Christian.<br>
-      - Faire un design de mobile pour tout le site.<br>
-      - Faire une recherche sur les iframes.<br>
+      - Adaptation du design sur base des fichiers de Christian.<br>
+      - Recherche sur les iframes.<br>
       - Intégrer le contenu.<br>
+      - Empêcher le resizing manuel d'un textarea et le faire s'adapter aux textes.<br>
+      - Adapter le design avec les fichiers de Christian (couleurs, avatars, import du logo dans le header).<br>
+      - Enlever les margin en trop des balises "pre" !.<br>
+      - Forcer la font Roboto pour les balises "pre" et voir si ca fonctionne.<br>
+      - Changer pour le background v2.<br>
+      - Adapter pour ne garder qu'un scroll vertical sur l'historique messages et pas sur l'interface entière.<br>
+      - Maquette de la page de présentation -> Christian.<br>
+      - Page de présentation -> Christian.<br>
+      - Inclure les typos et une hauteur de 100vh dans la page Index.<br>
     - 17/02 :
+      - Faire démarre les messages apr le bas (Merci Guillaume !).<br>
+      - Faire le JS du bouton pour qu'il "display" le chatbot.<br>
+      - Vérifier les espaces pour l'index en responsive.<br>
+      - Vérifier les padding dans "old messages".<br>
       - ! Vérification Validation W3C ! ....
       - Git Conflits ?.............
       - Remise du projet final<br>
 
   - BackEnd :
     - 15/02 :
-      - Tests sur les séquences des messages, analyse des faisabilités pour l'insertion de message dans du "textarea" et vérifier les dispositions des éléments dans l'ordre souhaité, vertical de bas en haut (saisie des messages dans le bas de la fenêtre, tandis que l'historique de ces messages se placent au-dessus de la saisie dans le sens, le plus ancien dans le haut de la liste) et gauche et droite, gauche pour les messages du "bot", droite pour les messages "utilisateurs"...
+      - Tests sur les séquences des messages.<br>
+      - Analyse des faisabilités pour l'insertion de message dans du "textarea".<br>
+      - Vérifier les dispositions des éléments dans l'ordre souhaité, vertical de bas en haut et gauche et droite, à gauche pour les messages de "KingLeo", à droite pour les messages "utilisateurs".<br>
+      - Test de la mise en place d'une stratégie de travail à deux (Guillaume et Robbert) sur une branche commune "backend".<br>
+      - Prise de la décision que "KingLeo" analyserait les phrases entrées par l'utilisateur à l'aide d'une "regex". En trouvant des patterns plus complexes que "oui" ou "non" dans la phrase, "KingLeo" pourrait mieux interpréter si la réponse de l'utilisateur à une nuance positive ou négative.<br>
+      - Test pour créer des bulles de conversation de manière dynamique dans le document html à l'aide de javascript, afin de  comprendre le fonctionement et prendre en main cette technique.<br>
     - 16/02 :
-      - 
+      - REGEX et son "monde merveilleux". La totalité de la journée a été consacrée à essayer d'apprivoiser ce systeme très complexe.<br>
+      - Nos tentatives de mettre en place cette technique REGEX dans le cadre de ce projet se sont avérées infructueuses. Que de frustration... dommage.<br>
+      - Il faut avancer et donc trouver autre chose.<br>
+      - Cette partie a été mise de côté pour avancer sur la création des fonctions principales qui déclenchent une suite d'instructions (envoi de message de l'utilisateur / création des messages KingLeo etc.).<br>
     - 17/02 :
-      - 
+      - La matiné a été utilisée pour finir le code JS.<br>
+      - L'après midi pour "merger" le travail du BackEnd avec le FrontEnd.<br>
+      - Tout le code a été rendu plus lisible en y ajoutant un maximum de commentaires.
 
 <a name="La-Mission"></a>
 ## La Mission
