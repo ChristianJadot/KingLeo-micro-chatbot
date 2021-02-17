@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleIndex.css">
+    <title>KingLeo Micro Chatbot</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-chatbot.png" alt="KingLeo-Micro-ChatBot" class="logo">
+    </header>
+    <main class="grid-container">
+        <section id="fr1">
+            <aside>
+                <h1>Decouvrez notre Chat KingLeo</h1>
+                <p>Vous allez découvrir ici notre nouveau chatbot KingLeo !<br>
+                   Il est charmant, mais attention de toujours bien veiller à répondre à ses questions et de manière relativement précise, sans quoi vous constaterez qu’il se met facilement en colère... Belle découverte !</p>
+                <button onclick="displayKingLeo()">Vers KingLeo</button>
+            </aside>
+        </section>
+        <section id="fr2">
+            <iframe id="inlineFrameExample" title="Interface ChatBot" width="100%" height="100%" src="interface-chatbot.html"></iframe>
+        </section>
+    </main>
+    <footer><a href="https://github.com/ChristianJadot/KingLeo-micro-chatbot" target="blank">Our GitHub &bull; KingLeo</a><br>&#169; 2021 BeCode - Création et réalisation<br><span>KingLeo</span> (qui disjoncte 1 fois sur 2)<span>&nbsp;&bull;&nbsp;Nathalie</span><span>&nbsp;&bull;&nbsp;Guillaume</span><span>&nbsp;&bull;&nbsp;Robbert</span><span>&nbsp;&bull;&nbsp;Christian</span></footer>
+    <!-- Pour que le bouton affiche le chatbot -->
+    <script>
+        function displayKingLeo() 
+        {
+        document.getElementById("inlineFrameExample").style.display ="block";
+        }
+    </script>
+
+</body>
+</html>

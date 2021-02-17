@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-interface-chatbot.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05be3ed2ff.js" crossorigin="anonymous"></script>
+    <title>KingLeo Micro Chatbot</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-chatbot.png" alt="Logo KingLeo-micro-chatbot">
+    </header>
+    <main>
+            <section id="old-messages">
+                <!-- LES DIV POUR SIMULATION AU DEBUT 
+                    <div class="robot-message">
+                    <img class="robot-avatar" src="images/robot-avatar-happy.png" alt="Avatar KingLeo" width="50" height="50">
+                    <div class="robot-answers"><pre>1) Récupération de l'id question ?<br>Simulation du message sur plusieurs lignes<br>BLablablablablabla</pre></div>
+                </div>
+                <div class="user-message">
+                    <div class="user-answers"><pre>2) Test blabla blabla blabla blabla<br>BLablablabla seconde ligne de texte du robot</pre></div>
+                </div> -->
+
+                
+                
+            </section>
+
+            <div id="loading"><br></div>
+            <section id="form">
+
+                <!-- <textarea name ="message" onkeyup="userSpeak(event)" id="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea> -->
+                <textarea name ="message" onkeyup="userSpeak(event)" id="text" rows="3"></textarea>
+                <button id="submit"><i class="fas fa-paper-plane"></i></button>
+            </section>
+    
+    </main>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>
