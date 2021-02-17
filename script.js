@@ -5,11 +5,11 @@ let welcomeMessages = ["Hi there buddy! How are You today?", "Hey You! How's it 
 
 const randomIndex = Math.round(Math.random() * (welcomeMessages.length - 1));
 
-//bot cannot understand + randomiser
-
-let endMessages = ["Try again please, my robot-ears aren't what they used to be!", "I do not understand! Please repeat!", "What kind of language are you speaking? In English please!"];
-
-const randomIndex2 = Math.round(Math.random() * (endMessages.length - 1));
+// a function that return a "not understood" message
+function notUnderstood() {
+    let notUnderstood = ["Try again please, my robot-ears aren't what they used to be!", "I do not understand! Please repeat!", "What kind of language are you speaking? In English please!"];
+    return notUnderstood[Math.round(Math.random() * (notUnderstood.length - 1))];
+}
 
 
 
@@ -64,13 +64,13 @@ negativeWords.forEach(element => {
 
 
     if (isPositive>0){
-       lastRobotMessage = YesAnwsers[randomIndex3]
+       lastRobotMessage = YesAnwsers[randomIndex3];
     }else if (isPositive<0){
-        lastRobotMessage = NoAnwsers[randomIndex4]
+        lastRobotMessage = NoAnwsers[randomIndex4];
     }else{ counter++;
          if (counter <= 3){
-        lastRobotMessage = endMessages[randomIndex2]}
-        else {lastRobotMessage = byeMessage}
+        lastRobotMessage = notUnderstood()}
+        else {lastRobotMessage = byeMessage;}
     };
 
     Robotbubble = document.createElement("PRE");
@@ -88,8 +88,6 @@ negativeWords.forEach(element => {
     RobotbubbleParent.appendChild(avatar);
     RobotbubbleParent.appendChild(Robotbubble);
     document.getElementById('old-messages').prepend(RobotbubbleParent);
-
-    // $('#old-messages').scrollTo(50000000);
 
 }
 
@@ -237,40 +235,3 @@ document.getElementById('submit').addEventListener('click', () => {
     // $('#old-messages').scrollTo(50000000);
 
 })
-
-
-
-
-
-
-
-
-
-
-// function robotAnswers() {
-
-//     var positiveWords = /(can't complain)|(great)|(not bad)|(not so bad)|(good)|(top)|(fine)|(very good)|(yes)/g;
-//     var negativeWords = /not so good|not/g; //bad|not( so good)?|shitty|shit|not good|no|not
-
-
-
-//     isPositive = lastUserMessage.match(positiveWords) == null ? [] : lastUserMessage.match(positiveWords).length;
-//     isNegative = lastUserMessage.match(negativeWords) == null ? [] : lastUserMessage.match(negativeWords).length;
-
-
-//     console.log(lastUserMessage.match(positiveWords));
-//     console.log(lastUserMessage.match(negativeWords));
-
-//     if (isPositive >= isNegative && isPositive > 0) {
-//         console.log(YesAnwsers[randomIndex3])
-//     }
-//     else if (isNegative > isPositive) {
-//         console.log(NoAnwsers[randomIndex3])
-//     }
-//     else {
-//         counter++;
-//         if (counter <= 3) { console.log(endMessages[randomIndex2]) }
-//         else { console.log("I don't have time for this !") }
-//     };
-// }
-
