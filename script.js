@@ -215,9 +215,12 @@ async function Welcome(){
     document.getElementById('loading').innerHTML = "";
 
     lastRobotMessage = howAreYouMessages();
-    Robotbubble = document.createElement("PRE");
+    Robotbubble = document.createElement("DIV");
     Robotbubble.classList.add("robot-answers");
-    Robotbubble.innerHTML = lastRobotMessage;
+    RobotbubbleSub = document.createElement("PRE");
+    RobotbubbleSub.innerHTML = lastRobotMessage;
+    Robotbubble.appendChild(RobotbubbleSub);
+
     RobotbubbleParent = document.createElement("DIV");
     RobotbubbleParent.classList.add("robot-message");
     avatar= document.createElement("IMG");
@@ -286,10 +289,10 @@ function userSpeak(event) {
         // newChatBox.disabled = true;
         // get the number of lines to set the height of the bubble
         // I think lines 100 to 104 is facultative
-        nbOfLines = (lastUserMessage.split('\n').length - 1) * 16.8;
-        nbOfLinesToString = nbOfLines.toString() + "px";
+        // nbOfLines = (lastUserMessage.split('\n').length - 1) * 16.8;
+        // nbOfLinesToString = nbOfLines.toString() + "px";
         // set the height of the bubble
-        newChatBox.style.height = nbOfLinesToString;
+        // newChatBox.style.height = nbOfLinesToString;
         // add this bubble to the html document
         // BUT HERE SOMETHING IMPORTANT WE PUT THE TWO NESTED ELEMENT PREVIOUSLY CREATED INSIDE THE ELEMENT "old-messages"
         document.getElementById('old-messages').prepend(newChatBoxParent);
