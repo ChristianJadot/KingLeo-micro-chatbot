@@ -128,7 +128,7 @@ footer
     border-radius: 20px 20px 0 0;
     padding:20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
     main.grid-container section#fr1 {
         display: none;
     }
@@ -144,5 +144,10 @@ footer
     iframe 
     {
         display: block;
-    }    
+    }
+    header img
+    {
+        display: none;
+    }
+
 }

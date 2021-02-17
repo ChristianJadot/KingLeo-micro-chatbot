@@ -22,7 +22,7 @@
 ## 17/02/2020
 - [ ] Ne pas paniquer
 - [x] Faire en sorte que les messages démarrent d'en bas (Merci Guillaume !)
-- [ ] Puller le css d'hier ! UI
+- [ ] ~~Puller le css d'hier ! UI~~ LE PADDDDDIIIIIIIING ! :dizzy_face:
 - [ ] Resoudre les barres de scrolling pas utiles
 - [ ] Adapter la hauteur de old message 
 - [ ] Limiter la longueur du text area à 3 lignes
