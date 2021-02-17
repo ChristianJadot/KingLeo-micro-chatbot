@@ -26,10 +26,32 @@
 - [ ] Adapter la hauteur de old message 
 - [ ] Limiter la longueur du text area à 3 lignes
 - [ ] Faire en sorte que old message affiche la barre et que le heigth de body reste à 100%/vh
+- [x] Faire le JS du bouton pour qu'il display le tchatbot 
 - [ ] Faire un design mobile pour toute l'interface
 - [ ] Adapter l'interface à la page de présentation
 - [ ] Colorier les bordures et l'icone du form
+- [ ] Virer l'espace a gauche pour l'index en responsive
+- [x] rajouter un padding left & right dans les old messages
 
 ## Phase de polish
 - [ ] Utiliser les têtes différentes pour le robot en fonction des emotions (pour le moment y'en a 3)
+
+## 
+Backup css
+iframe
+    display: none;
+
+Backups html
+   <!-- Pour que le bouton affiche le chatbot -->
+    <script>
+        function displayKingLeo() 
+        {
+        document.getElementById("inlineFrameExample").style.display ="block";
+        }
+    </script>
+
+    + 
+
+    <button onclick="displayKingLeo()">Vers KingLeo</button>
+
 
