@@ -111,7 +111,7 @@ Après cette réponse, le bot a terminé sa routine. Il dit "au revoir" à l'uti
 
 <a name="Lien-vers-notre-chatbot"></a>
 ## Lien vers notre chatbot
-[Voici le KingLeo Micro Chatbot](lien à copier/coller ici)
+[Voici le KingLeo Micro Chatbot](https://christianjadot.github.io/KingLeo-micro-chatbot/)
 
 <a name="Page-Github"></a>
 ## Page Github
