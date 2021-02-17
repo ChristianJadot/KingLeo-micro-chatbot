@@ -134,8 +134,16 @@ pre
     font-family: Roboto, 'Roboto Mono', monospace !important;
     margin: 0;
     white-space: break-spaces;
-}
+    
 
+}
+/*----------------------LOADING-------------------------*/
+#loading
+{
+    color: #ffffff;
+    /* text-align: center; */
+    margin-left: 10px;
+}
 /*----------------------FORM-------------------------*/
 
 
@@ -159,7 +167,15 @@ pre
 {
     border-top-right-radius: 0 ;
     border-bottom-right-radius: 0 ;
+    border-color: #ffffff;
 
+}
+
+#form textarea:disabled
+{
+    background: linear-gradient(
+        0.3turn
+        ,#b1a7dd, #d8bbf6);
 }
 
 #form button
@@ -168,12 +184,20 @@ pre
     border-bottom-left-radius: 0 ;
     padding: 0;
     margin: 0;
+    border-color: #ffffff;
 }
 
+#form button:disabled
+{
+    background: linear-gradient(
+        0.3turn
+        ,#b1a7dd, #d8bbf6);
+}
 #form button i
 {
     display: block;
     margin: auto;
+
 }
 
 #form textarea
