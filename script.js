@@ -5,6 +5,9 @@ function welcomeMessages() {
     return welcomeMessages[Math.round(Math.random() * (welcomeMessages.length - 1))];
 }
 
+//a function with a random out of three "Welcome Message"
+
+
 // a function that return a "not understood" message 
 function notUnderstood() {
     let notUnderstood = ["Try again please, my robot-ears aren't what they used to be!", "I do not understand! Please repeat!", "What kind of language are you speaking? In English please!"];
@@ -128,7 +131,7 @@ function sleep(ms) {
   //* this function is for fun, create random strings to simulate the robot is writing something
   function makeid(length) {
     var result           = '';
-    var characters       = '¹&~#({-[`_^@)]ƔѬ≹⊕⏈◑☺♬°}+=1§®±¼å';
+    var characters       = '¹&~#.0*/-+^ç=';
     var charactersLength = characters.length;
     for ( var i = 0; i < length; i++ ) {
        result += characters.charAt(Math.floor(Math.random() * charactersLength));
