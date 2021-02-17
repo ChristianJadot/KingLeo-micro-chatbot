@@ -141,4 +141,8 @@ footer
         grid-template-areas: "fr2";
     }
 
+    iframe 
+    {
+        display: block;
+    }    
 }
