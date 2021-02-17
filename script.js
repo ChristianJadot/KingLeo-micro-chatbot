@@ -38,9 +38,9 @@ var lastRobotMessage = "";
 
 function robotAnswers() {
 
-   /* var isPositive = 0;
+   var isPositive = 0;
 
-        if (lastUserMessage.includes("yes")){
+      /*  if (lastUserMessage.includes("yes")){
             isPositive++;
 
         };
@@ -55,7 +55,7 @@ negativeWords = ["no", "bad","not","not so good","awefull","shit","shitty"];
 positiveWords.forEach(element => {
             if(lastUserMessage.includes(element)){
             isPositive++;
- }
+ }})
 negativeWords.forEach(element => {
             if(lastUserMessage.includes(element)){
             isPositive--;
@@ -71,7 +71,7 @@ negativeWords.forEach(element => {
          if (counter <= 3){
         lastRobotMessage = endMessages[randomIndex2]}
         else {lastRobotMessage = byeMessage}
-    }
+    };
 
     Robotbubble = document.createElement("PRE");
     Robotbubble.classList.add("robot-answers");
@@ -147,6 +147,8 @@ async function Welcome(){
     RobotbubbleParent.appendChild(Robotbubble);
     document.getElementById('old-messages').appendChild(RobotbubbleParent);
 }
+
+
 Welcome();
 
     
