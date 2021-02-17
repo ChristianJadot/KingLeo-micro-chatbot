@@ -1,32 +1,36 @@
 
 
-//welcome messages + random message
-let welcomeMessages = ["Hi there buddy! How are You today?", "Hey You! How's it going?", "Well helo there! Tell me, How have you been?"];
 
-const randomIndex = Math.round(Math.random() * (welcomeMessages.length - 1));
 
-// a function that return a "not understood" message
+//a function with a random out of three "Welcome Message"
+
+function welcomeMessages() { 
+    let welcomeMessages = ["Hi there buddy! How are You today?", "Hey You! How's it going?", "Well helo there! Tell me, How have you been?"];
+    return welcomeMessages[Math.round(Math.random() * (welcomeMessages.length - 1))];
+}
+
+// a function that return a "not understood" message 
 function notUnderstood() {
     let notUnderstood = ["Try again please, my robot-ears aren't what they used to be!", "I do not understand! Please repeat!", "What kind of language are you speaking? In English please!"];
     return notUnderstood[Math.round(Math.random() * (notUnderstood.length - 1))];
 }
 
+//  a function that returns a random out of three "anwser to an positive message"
+
+function YesAnwsers() {
+    let YesAnwsers = ["Well that's good to hear! Keep it up!", "Nice! Enjoying the good life right!", "That's the way to do it!"];
+    return YesAnwsers[Math.round(Math.random() * (YesAnwsers.length - 1))];
+}
+
+// a function that returns a random out of three "anwser to an negative message"
+
+function NoAnwsers() {
+    let NoAnwsers = ["Don't worry to much. It will become better.", "Sometime life sucks but i won't stay that way I promise.", "I'm sorry I hope it gets better soon."];
+    return NoAnwsers[Math.round(Math.random() * (NoAnwsers.length - 1))];
+}
 
 
-// yes + randomiser
-
-let YesAnwsers = ["Well that's good to hear! Keep it up!", "Nice! Enjoying the good life right!", "That's the way to do it!"];
-
-const randomIndex3 = Math.round(Math.random() * (YesAnwsers.length - 1));
-
-
-//no + randomiser 
-
-let NoAnwsers = ["Don't worry to much. It will become better.", "Sometime life sucks but i won't stay that way I promise.", "I'm sorry I hope it gets better soon."];
-
-const randomIndex4 = Math.round(Math.random() * (NoAnwsers.length - 1));
-
-// goodbye
+// goodbye message 
 
 let byeMessage = "See you around";
 
@@ -53,20 +57,20 @@ positiveWords = ["yes", "good","lovely","top","nice","very good","great"];
 negativeWords = ["no", "bad","not","not so good","awefull","shit","shitty"];
 
 positiveWords.forEach(element => {
-            if(lastUserMessage.includes(element)){
+            if(lastUserMessage.toLowerCase().includes(element)){
             isPositive++;
  }})
 negativeWords.forEach(element => {
-            if(lastUserMessage.includes(element)){
+            if(lastUserMessage.toLowerCase().includes(element)){
             isPositive--;
         }
 });
 
 
     if (isPositive>0){
-       lastRobotMessage = YesAnwsers[randomIndex3];
+       lastRobotMessage = YesAnwsers ();
     }else if (isPositive<0){
-        lastRobotMessage = NoAnwsers[randomIndex4];
+        lastRobotMessage = NoAnwsers ();
     }else{ counter++;
          if (counter <= 3){
         lastRobotMessage = notUnderstood()}
@@ -126,7 +130,7 @@ async function Welcome(){
         await sleep(100);  
     }
     document.getElementById('loading').innerHTML = "";
-    lastRobotMessage = welcomeMessages[randomIndex];
+    lastRobotMessage = welcomeMessages();
     Robotbubble = document.createElement("PRE");
     Robotbubble.classList.add("robot-answers");
     Robotbubble.innerHTML = lastRobotMessage;
