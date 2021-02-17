@@ -136,7 +136,7 @@ function sleep(ms) {
         document.getElementById('loading').innerHTML = "KingLeo is thinking..."+makeid(5);
         await sleep(100);  
     }
-      document.getElementById('loading').innerHTML = "";
+      document.getElementById('loading').innerHTML = "<br>";
       robotAnswers();
   }
 
@@ -171,7 +171,7 @@ async function Welcome(){
         document.getElementById('loading').innerHTML = "KingLeo is thinking..."+makeid(5);
         await sleep(100);  
     }
-    document.getElementById('loading').innerHTML = "";
+    document.getElementById('loading').innerHTML = "<br>";
 
     // then we put a random Welcome message in a bubble with the avatar and we put everything inside the old-messages element
 
@@ -212,7 +212,7 @@ async function Welcome(){
         document.getElementById('loading').innerHTML = "KingLeo is thinking..."+makeid(5);
         await sleep(100);  
     }
-    document.getElementById('loading').innerHTML = "";
+    document.getElementById('loading').innerHTML = "<br>";
 
     lastRobotMessage = howAreYouMessages();
     Robotbubble = document.createElement("DIV");
