@@ -55,8 +55,8 @@ function robotAnswers() {
    var isPositive = 0;
 
 
-positiveWords = ["yes", "good","lovely","top","nice","very good","great"];
-negativeWords = ["no", "bad","not","not so good","awefull","shit","shitty"];
+positiveWords = ["yes", "good","lovely","top","nice","very good","great", "fine"];
+negativeWords = ["no", "bad","not","not so good","awefull","shit","shitty", "tired"];
 
 // Here we parse the last user message to find positive/negative words, in consequence of that we change the isPositive value
 positiveWords.forEach(element => {
@@ -86,11 +86,22 @@ negativeWords.forEach(element => {
 
 // ---------- script to create the BUBBLE
 
-//  1 we create a "pre" element of class "robot-answers" that contain the last robot message
-    Robotbubble = document.createElement("PRE");
+//  1 we create a "pre" that contain the last robot message and an a DIV of class "robot-answers", then we put the PRE inside the DIV
+    Robotbubble = document.createElement("DIV");
     Robotbubble.classList.add("robot-answers");
-    Robotbubble.innerHTML = lastRobotMessage;
+    RobotbubbleSub = document.createElement("PRE");
+    RobotbubbleSub.innerHTML = lastRobotMessage;
+    Robotbubble.appendChild(RobotbubbleSub);
 
+
+/*
+<div class="robot-message">
+                    <img class="robot-avatar" src="images/robot-avatar-happy.png" alt="Avatar KingLeo" width="50" height="50">
+                    <div class="robot-answers">
+                                              <pre> le text </pre>
+                    </div>
+</div>
+*/
 
 // 2 we create a DIV with the class "robot-message" that will contain the robot message and an avatar
     RobotbubbleParent = document.createElement("DIV");
@@ -310,3 +321,5 @@ document.getElementById('submit').addEventListener('click', () => {
     waitAndAnswer()
 
 })
+
+
