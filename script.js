@@ -65,7 +65,6 @@ function robotAnswers() {
     Robotbubble.innerHTML = lastRobotMessage;
     RobotbubbleParent = document.createElement("DIV");
     RobotbubbleParent.classList.add("robot-message");
-    RobotbubbleParent.appendChild(Robotbubble);
     avatar= document.createElement("IMG");
     avatar.classList.add("robot-avatar");
     avatar.src = "images/robot-avatar-happy.png";
@@ -74,9 +73,10 @@ function robotAnswers() {
     avatar.height="50";
 
     RobotbubbleParent.appendChild(avatar);
+    RobotbubbleParent.appendChild(Robotbubble);
     document.getElementById('old-messages').prepend(RobotbubbleParent);
 
-    $('#old-messages').scrollTo(50000000);
+    // $('#old-messages').scrollTo(50000000);
 
 }
 
@@ -184,7 +184,7 @@ function userSpeak(event) {
         // BUT HERE SOMETHING IMPORTANT WE PUT THE TWO NESTED ELEMENT PREVIOUSLY CREATED INSIDE THE ELEMENT "old-messages"
         document.getElementById('old-messages').prepend(newChatBoxParent);
         waitAndAnswer()
-        $('#old-messages').scrollTo(50000000);
+        // $('#old-messages').scrollTo(50000000);
 
     }
 }
@@ -219,7 +219,7 @@ document.getElementById('submit').addEventListener('click', () => {
     // add this bubble to the html document
     document.getElementById('old-messages').appendChild(newChatBoxParent);
     waitAndAnswer()
-    $('#old-messages').scrollTo(50000000);
+    // $('#old-messages').scrollTo(50000000);
 
 })
 
