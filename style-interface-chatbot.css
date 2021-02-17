@@ -27,7 +27,7 @@ main
     width:100vw;
     margin:0 auto;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto auto;
     /* align-content: end; */
     position:relative;
     /* background-color: #ebdef3; */
