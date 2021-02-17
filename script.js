@@ -78,9 +78,10 @@ negativeWords.forEach(element => {
         lastRobotMessage = NoAnwsers();
     }else{ counter++;
          if (counter <= 3){
-        lastRobotMessage = notUnderstood()}
+        lastRobotMessage = notUnderstood();}
         else {lastRobotMessage = byeMessage;
-            document.getElementById("text").disabled = true;}
+            document.getElementById("text").disabled = true;
+            document.getElementById("submit").disabled = true;}
     };
 
 
@@ -94,14 +95,8 @@ negativeWords.forEach(element => {
     Robotbubble.appendChild(RobotbubbleSub);
 
 
-/*
-<div class="robot-message">
-                    <img class="robot-avatar" src="images/robot-avatar-happy.png" alt="Avatar KingLeo" width="50" height="50">
-                    <div class="robot-answers">
-                                              <pre> le text </pre>
-                    </div>
-</div>
-*/
+
+
 
 // 2 we create a DIV with the class "robot-message" that will contain the robot message and an avatar
     RobotbubbleParent = document.createElement("DIV");
@@ -179,10 +174,21 @@ async function Welcome(){
     document.getElementById('loading').innerHTML = "";
 
     // then we put a random Welcome message in a bubble with the avatar and we put everything inside the old-messages element
+
+
+
+
+
+
+
     lastRobotMessage = welcomeMessages();
-    Robotbubble = document.createElement("PRE");
+    Robotbubble = document.createElement("DIV");
     Robotbubble.classList.add("robot-answers");
-    Robotbubble.innerHTML = lastRobotMessage;
+    RobotbubbleSub = document.createElement("PRE");
+    RobotbubbleSub.innerHTML = lastRobotMessage;
+    Robotbubble.appendChild(RobotbubbleSub);
+
+
     RobotbubbleParent = document.createElement("DIV");
     RobotbubbleParent.classList.add("robot-message");
     avatar= document.createElement("IMG");
@@ -241,7 +247,14 @@ Welcome();
 var lastUserMessage = "";
 
 
-
+/*
+<div class="robot-message">
+                    <img class="robot-avatar" src="images/robot-avatar-happy.png" alt="Avatar KingLeo" width="50" height="50">
+                    <div class="robot-answers">
+                                              <pre> le text </pre>
+                    </div>
+</div>
+*/
 //! -----------------------------------------USER SPEAK FUNCTION DECLARATION---------------------------------
 function userSpeak(event) {
     var x = event.which || event.keyCode;
