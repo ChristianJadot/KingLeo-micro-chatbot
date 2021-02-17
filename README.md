@@ -11,7 +11,8 @@ Création d'une interface utilisateur avec Chatbot...<br>
 4. [Les Compétences](#Les-Compétences)
 5. [Lien vers notre chatbot](#Lien-vers-notre-chatbot)
 6. [Page Github](#Page-Github)
-7. [Layout](#Layout)
+7. [LightHouse résultats](#LightHouse)
+8. [Layout](#Layout)
 
 ***
 
@@ -63,9 +64,7 @@ Création d'une interface utilisateur avec Chatbot...<br>
       - Faire le JS du bouton pour qu'il "display" le chatbot.<br>
       - Vérifier les espaces pour l'index en responsive.<br>
       - Vérifier les padding dans "old messages".<br>
-      - ! Vérification Validation W3C ! ....
-      - Git Conflits ?.............
-      - Remise du projet final<br>
+      - Mise en place du lien GitHub sur l'index.html
 
   - BackEnd :
     - 15/02 :
@@ -118,6 +117,11 @@ Après cette réponse, le bot a terminé sa routine. Il dit "au revoir" à l'uti
 ## Page Github
 L'ensemble des éléments "Pages et dossiers" ont été placés sur Github.<br>  
 Voici le repo sur [Github](https://github.com/ChristianJadot/KingLeo-micro-chatbot/)<br>
+
+<a name="LightHouse"></a>
+## LightHouse résultats
+Résultat de l'analyse faite par l'application LightHouse-Google.<br>  
+Voici ce résultat [LightHouse View](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fchristianjadot.github.io%2FKingLeo-micro-chatbot%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)<br>
 
 <a name=""></a>
 ## Layout
