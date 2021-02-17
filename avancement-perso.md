@@ -33,9 +33,9 @@
 - [ ] Colorier les bordures et l'icone du form
 - [x] Virer l'espace a gauche pour l'index en responsive
 - [x] rajouter un padding left & right dans les old messages
-- [ ] Faire le contenu et le design du footer 
+- [ ] ~~Faire le contenu et le design du footer~~ -> Délégué à Christian
 
 ## Phase de polish
 - [ ] Utiliser les têtes différentes pour le robot en fonction des emotions (pour le moment y'en a 3)
-- [ ] Mettre un margin left a l'index 
+- [x] Mettre un margin left a l'index 
 

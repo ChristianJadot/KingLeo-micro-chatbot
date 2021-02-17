@@ -1,9 +1,18 @@
 //a function with a random out of three "Welcome Message"
 
 function welcomeMessages() { 
-    let welcomeMessages = ["Hi there buddy! How are You today?", "Hey You! How's it going?", "Well helo there! Tell me, How have you been?"];
+    let welcomeMessages = ["Hi there buddy!", "Hey You!", "Well helo there!"];
     return welcomeMessages[Math.round(Math.random() * (welcomeMessages.length - 1))];
 }
+
+function howAreYouMessages(){
+    let welcomeMessages = ["How are You today?", "How's it going?", "Tell me, How have you been?"];
+    return welcomeMessages[Math.round(Math.random() * (welcomeMessages.length - 1))];
+
+}
+
+//a function with a random out of three "Welcome Message"
+
 
 // a function that return a "not understood" message 
 function notUnderstood() {
@@ -70,7 +79,8 @@ negativeWords.forEach(element => {
     }else{ counter++;
          if (counter <= 3){
         lastRobotMessage = notUnderstood()}
-        else {lastRobotMessage = byeMessage;}
+        else {lastRobotMessage = byeMessage;
+            document.getElementById("text").disabled = true;}
     };
 
 
@@ -128,7 +138,7 @@ function sleep(ms) {
   //* this function is for fun, create random strings to simulate the robot is writing something
   function makeid(length) {
     var result           = '';
-    var characters       = '¹&~#({-[`_^@)]ƔѬ≹⊕⏈◑☺♬°}+=1§®±¼å';
+    var characters       = '¹&~#.0*/-+^ç=';
     var charactersLength = characters.length;
     for ( var i = 0; i < length; i++ ) {
        result += characters.charAt(Math.floor(Math.random() * charactersLength));
@@ -174,6 +184,35 @@ async function Welcome(){
     RobotbubbleParent.appendChild(avatar);
     RobotbubbleParent.appendChild(Robotbubble);
     document.getElementById('old-messages').appendChild(RobotbubbleParent);
+
+    await sleep(450);
+
+    for (var i = 0 ; i<5;i++){
+        document.getElementById('loading').innerHTML = "KingLeo is thinking.  "+makeid(5);
+        await sleep(100);
+        document.getElementById('loading').innerHTML = "KingLeo is thinking.. "+makeid(5);
+        await sleep(100);
+        document.getElementById('loading').innerHTML = "KingLeo is thinking..."+makeid(5);
+        await sleep(100);  
+    }
+    document.getElementById('loading').innerHTML = "";
+
+    lastRobotMessage = howAreYouMessages();
+    Robotbubble = document.createElement("PRE");
+    Robotbubble.classList.add("robot-answers");
+    Robotbubble.innerHTML = lastRobotMessage;
+    RobotbubbleParent = document.createElement("DIV");
+    RobotbubbleParent.classList.add("robot-message");
+    avatar= document.createElement("IMG");
+    avatar.classList.add("robot-avatar");
+    avatar.src = "images/robot-avatar-happy.png";
+    avatar.alt="Avatar KingLeo";
+    avatar.width="50";
+    avatar.height="50";
+
+    RobotbubbleParent.appendChild(avatar);
+    RobotbubbleParent.appendChild(Robotbubble);
+    document.getElementById('old-messages').prepend(RobotbubbleParent);
 }
 
 //!------------ END OF THE FUNCTION WELCOME()
@@ -261,12 +300,13 @@ document.getElementById('submit').addEventListener('click', () => {
     newChatBoxParent.appendChild(newChatBox);
     // newChatBox.disabled = true;
     // get the number of lines to set the height of the bubble
-    nbOfLines = (lastUserMessage.split('\n').length) * 16.8;
-    nbOfLinesToString = nbOfLines.toString() + "px";
+    // nbOfLines = (lastUserMessage.split('\n').length) * 16.8;
+    // nbOfLinesToString = nbOfLines.toString() + "px";
     // set the height of the bubble
-    newChatBox.style.height = nbOfLinesToString;
+
+    // newChatBox.style.height = nbOfLinesToString;
     // add this bubble to the html document
-    document.getElementById('old-messages').appendChild(newChatBoxParent);
+    document.getElementById('old-messages').prepend(newChatBoxParent);
     waitAndAnswer()
 
 })
