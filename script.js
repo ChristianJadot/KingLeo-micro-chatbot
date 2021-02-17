@@ -114,7 +114,7 @@ async function Welcome(){
     RobotbubbleParent = document.createElement("DIV");
     RobotbubbleParent.classList.add("robot-message");
     RobotbubbleParent.appendChild(Robotbubble);
-    document.getElementById('#old-messages').prepend(RobotbubbleParent);
+    document.getElementById('old-messages').appendChild(RobotbubbleParent);
 }
 Welcome();
 
@@ -164,7 +164,7 @@ function userSpeak(event) {
         newChatBox.style.height = nbOfLinesToString;
         // add this bubble to the html document
         // BUT HERE SOMETHING IMPORTANT WE PUT THE TWO NESTED ELEMENT PREVIOUSLY CREATED INSIDE THE ELEMENT "old-messages"
-        document.getElementById('old-messages').append(newChatBoxParent);
+        document.getElementById('old-messages').prepend(newChatBoxParent);
         waitAndAnswer()
         $('#old-messages').scrollTo(50000000);
 

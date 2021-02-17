@@ -68,20 +68,28 @@ header img
 /*----------------------ANSWERS-------------------------*/
 
 #old-messages
-{
+{   
+    /* //! CHANGEMENTS PAR GUILLAUME */
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    overflow: auto;
+/*! -------------------------------- */
     color : #ffffff;
     background-color: #ebdef3;
     /* background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6); */
     overflow-y: scroll;
     align-content: flex-end;
     max-height:70vh;
+
 }
 .robot-message
 {
     display: grid;
-    grid-template-columns: 70px auto;
+     /*! ici j'ai changé le grid-template-columns en auto auto et pas d'overflow*/
+    grid-template-columns: auto auto;
     margin: 10px 0;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .robot-avatar
