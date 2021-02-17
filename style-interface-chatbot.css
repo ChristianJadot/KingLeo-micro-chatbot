@@ -30,8 +30,8 @@ main
     grid-template-rows: 1fr auto;
     /* align-content: end; */
     position:relative;
-    background-color: #ebdef3;
-    /* background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6); */
+    /* background-color: #ebdef3; */
+    background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6);
     border-radius: 0 0 20px 20px;
 }
 
@@ -68,28 +68,29 @@ header img
 /*----------------------ANSWERS-------------------------*/
 
 #old-messages
-{   
-    /* //! CHANGEMENTS PAR GUILLAUME */
-    display: flex;
-    flex-direction: column;
-    flex-flow: column-reverse;
-    overflow: auto;
-/*! -------------------------------- */
+{
     color : #ffffff;
-    background-color: #ebdef3;
-    /* background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6); */
+    /* background-color: #ebdef3; */
+    background: linear-gradient(0.3turn,#b1a7dd, #d8bbf6);
     overflow-y: scroll;
-    align-content: flex-end;
     max-height:70vh;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
 
+
+}
+
+#old-message div:last-child
+{
+    margin-top: 20px;
 }
 .robot-message
 {
     display: grid;
-     /*! ici j'ai changé le grid-template-columns en auto auto et pas d'overflow*/
-    grid-template-columns: auto auto;
+    grid-template-columns: 70px auto;
     margin: 10px 0;
-    /* overflow: auto; */
+    
 }
 
 .robot-avatar
@@ -182,3 +183,4 @@ pre
     resize: none;
 
 }
+

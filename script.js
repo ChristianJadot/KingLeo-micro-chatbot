@@ -79,6 +79,14 @@ negativeWords.forEach(element => {
     RobotbubbleParent = document.createElement("DIV");
     RobotbubbleParent.classList.add("robot-message");
     RobotbubbleParent.appendChild(Robotbubble);
+    avatar= document.createElement("IMG");
+    avatar.classList.add("robot-avatar");
+    avatar.src = "images/robot-avatar-happy.png";
+    avatar.alt="Avatar KingLeo";
+    avatar.width="50";
+    avatar.height="50";
+
+    RobotbubbleParent.appendChild(avatar);
     document.getElementById('old-messages').prepend(RobotbubbleParent);
 
     $('#old-messages').scrollTo(50000000);
@@ -97,11 +105,11 @@ function sleep(ms) {
 
   async function waitAndAnswer(){
       for (var i = 0 ; i<10;i++){
-        document.getElementById('loading').innerHTML = "robot is thinking.";
+        document.getElementById('loading').innerHTML = "KingLeo is thinking.";
         await sleep(100);
-        document.getElementById('loading').innerHTML = "robot is thinking..";
+        document.getElementById('loading').innerHTML = "KingLeo is thinking..";
         await sleep(100);
-        document.getElementById('loading').innerHTML = "robot is thinking...";
+        document.getElementById('loading').innerHTML = "KingLeo is thinking...";
         await sleep(100);  
     }
       document.getElementById('loading').innerHTML = "";
@@ -126,6 +134,16 @@ async function Welcome(){
     Robotbubble.innerHTML = lastRobotMessage;
     RobotbubbleParent = document.createElement("DIV");
     RobotbubbleParent.classList.add("robot-message");
+    
+    
+    avatar= document.createElement("IMG");
+    avatar.classList.add("robot-avatar");
+    avatar.src = "images/robot-avatar-happy.png";
+    avatar.alt="Avatar KingLeo";
+    avatar.width="50";
+    avatar.height="50";
+
+    RobotbubbleParent.appendChild(avatar);
     RobotbubbleParent.appendChild(Robotbubble);
     document.getElementById('old-messages').appendChild(RobotbubbleParent);
 }
@@ -147,7 +165,7 @@ function userSpeak(event) {
     { null; }
     else if (x == 13) { // Just Enter
         // assign the user textArea to a variable "userBox"
-        userBox = document.getElementById('userBox');
+        userBox = document.getElementById('text');
         // get the value of it and assign that text to "lastUserMessage"
         lastUserMessage = userBox.value;
         // push this value into "historyOfMessages"
@@ -155,7 +173,7 @@ function userSpeak(event) {
 
 
         // Clear the userBox
-        $('#userBox').val('');
+        $('#text').val('');
 
         // BUBBLE CREATION with some properties
         //      we create a "pre" element and we add a "user-answers"
@@ -184,11 +202,11 @@ function userSpeak(event) {
     }
 }
 
-document.getElementById('send').addEventListener('click', () => {
+document.getElementById('submit').addEventListener('click', () => {
 
     console.log("send");
 
-    userBox = document.getElementById('userBox');
+    userBox = document.getElementById('text');
     // get the value of it and assign that text to "lastUserMessage"
     lastUserMessage = userBox.value;
     // push this value into "historyOfMessages"
@@ -196,7 +214,7 @@ document.getElementById('send').addEventListener('click', () => {
 
 
     // Clear the userBox
-    $('#userBox').val('');
+    $('#text').val('');
 
     // BUBBLE CREATION with some properties
     newChatBox = document.createElement("PRE");
