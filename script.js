@@ -306,7 +306,7 @@ document.getElementById('submit').addEventListener('click', () => {
 
     // newChatBox.style.height = nbOfLinesToString;
     // add this bubble to the html document
-    document.getElementById('old-messages').appendChild(newChatBoxParent);
+    document.getElementById('old-messages').prepend(newChatBoxParent);
     waitAndAnswer()
 
 })
