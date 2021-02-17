@@ -34,11 +34,11 @@ let byeMessage = "See you around";
 
 // if counter
 var counter = 0;
-var lastRobotMessage = "yoyo";
+var lastRobotMessage = "";
 
 function robotAnswers() {
 
-    var isPositive = 0;
+   /* var isPositive = 0;
 
         if (lastUserMessage.includes("yes")){
             isPositive++;
@@ -47,9 +47,22 @@ function robotAnswers() {
         if(lastUserMessage.includes("no")){
             isPositive--;
         }
+*/
+
+positiveWords = ["yes", "good","lovely","top","nice","very good","great"];
+negativeWords = ["no", "bad","not","not so good","awefull","shit","shitty"];
+
+positiveWords.forEach(element => {
+            if(lastUserMessage.includes(element)){
+            isPositive++;
+ }
+negativeWords.forEach(element => {
+            if(lastUserMessage.includes(element)){
+            isPositive--;
+        }
+});
 
 
-    
     if (isPositive>0){
        lastRobotMessage = YesAnwsers[randomIndex3]
     }else if (isPositive<0){
