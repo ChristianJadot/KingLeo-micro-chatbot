@@ -141,9 +141,4 @@ footer
         grid-template-areas: "fr2";
     }
 
-    /* #fr2 
-    {
-        grid-area: fr2;
-    }
-     */
 }
