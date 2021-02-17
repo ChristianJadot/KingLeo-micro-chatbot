@@ -22,36 +22,20 @@
 ## 17/02/2020
 - [ ] Ne pas paniquer
 - [x] Faire en sorte que les messages démarrent d'en bas (Merci Guillaume !)
+- [ ] Puller le css d'hier ! UI
 - [ ] Resoudre les barres de scrolling pas utiles
 - [ ] Adapter la hauteur de old message 
 - [ ] Limiter la longueur du text area à 3 lignes
 - [ ] Faire en sorte que old message affiche la barre et que le heigth de body reste à 100%/vh
 - [x] Faire le JS du bouton pour qu'il display le tchatbot 
-- [ ] Faire un design mobile pour toute l'interface
+- [ ] Faire un design mobile pour toute l'interface > j'imagine c'est la hauteur
 - [ ] Adapter l'interface à la page de présentation
 - [ ] Colorier les bordures et l'icone du form
-- [ ] Virer l'espace a gauche pour l'index en responsive
+- [x] Virer l'espace a gauche pour l'index en responsive
 - [x] rajouter un padding left & right dans les old messages
+- [ ] Faire le contenu et le design du footer 
 
 ## Phase de polish
 - [ ] Utiliser les têtes différentes pour le robot en fonction des emotions (pour le moment y'en a 3)
-
-## 
-Backup css
-iframe
-    display: none;
-
-Backups html
-   <!-- Pour que le bouton affiche le chatbot -->
-    <script>
-        function displayKingLeo() 
-        {
-        document.getElementById("inlineFrameExample").style.display ="block";
-        }
-    </script>
-
-    + 
-
-    <button onclick="displayKingLeo()">Vers KingLeo</button>
-
+- [ ] Mettre un margin left a l'index 
 

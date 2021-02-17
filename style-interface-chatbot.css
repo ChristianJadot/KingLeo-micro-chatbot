@@ -77,19 +77,17 @@ header img
     display: flex;
     flex-direction: column-reverse;
     margin-top: 10px;
+    /* padding: 10px; */
 
 
 }
 
-#old-message div:last-child
-{
-    margin-top: 20px;
-}
 .robot-message
 {
     display: grid;
     grid-template-columns: 70px auto;
-    margin: 10px 0;
+    margin: 10px;
+    margin-left: 0;
     
 }
 
@@ -112,7 +110,8 @@ header img
 }
 .user-message
 {
-    margin: 10px 0;
+    margin: 10px;
+    margin-right:0px;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: end;

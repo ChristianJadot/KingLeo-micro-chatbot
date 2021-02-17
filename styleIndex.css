@@ -24,24 +24,25 @@ header .logo {
     max-width: 200px;
 }
 
-main {
+main.grid-container {
     background-image: url(images/bg-interface-KingLeo-chatbot.png);
     background-position: center;
-}
-
-.grid-container {
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     gap: 0px;
-    grid-template-areas: "fr1 fr2 fr3";
+    grid-template-areas: "fr1 fr2";
 }
 
-.fr1 {
+
+#fr1 {
     grid-area: fr1;
+    justify-self: center;
+    padding: 0 20px; 
 }
 
-.fr2 {
+#fr2 {
     grid-area: fr2;
     position:relative;
     justify-self: center;
@@ -106,6 +107,7 @@ button:active {
 }
 
 iframe {
+    display: none;
     border: none;
     justify-self: center;
     /* position: absolute;
@@ -127,7 +129,21 @@ footer
     padding:20px;
 }
 @media screen and (max-width: 800px) {
-    .grid-container aside {
+    main.grid-container aside {
         display: none;
     }
+
+    main.grid-container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px;
+        grid-template-areas: "fr2";
+    }
+
+    /* #fr2 
+    {
+        grid-area: fr2;
+    }
+     */
 }
