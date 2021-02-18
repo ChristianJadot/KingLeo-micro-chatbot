@@ -46,6 +46,8 @@ main.grid-container {
     grid-area: fr2;
     position:relative;
     justify-self: center;
+    /* height: 0; */
+    /* padding-top: 25px; */
 }
 
 .grid-container aside {
@@ -114,15 +116,18 @@ button:active {
 iframe {
     display: none;
     border: none;
+    /* OLD STUFF */
     justify-self: center;
-    /* position: absolute;
-    top: 0;
-    left: 0;*/
     min-width: 350px;
     height: 100%; 
     overflow: visible;
     width: fit-content;
-
+    /* NEW STUFF */
+    /* position: absolute;
+	/* top: 0; */
+	/* left: 0; */
+	/* width: 100%;
+	height: 100%; */
 }
 
 footer
