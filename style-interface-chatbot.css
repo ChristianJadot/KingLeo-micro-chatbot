@@ -13,19 +13,13 @@ body
     grid-template-columns: 1fr;
     /* grid-template-rows: auto 1fr; */
     grid-template-rows: 20vh 80vh;
-
-    /* grid-template-rows: 160px auto; */
-
     font-family: 'Roboto', sans-serif;
     min-height: 100vh; 
     border-radius: 20px;
-    /* max-height: auto; */
-    /* JE DOIS TRAVAILLER LA DESSUS */
     overflow: hidden;
 
-    /* max-height: 100vh; */
 }
-/*Pour*/
+/*Pour le responsive*/
 
 @media screen and (max-height: 785px)
 { 
@@ -62,14 +56,6 @@ body
         
     }
 }
-/* @media screen and (max-height: 465px)
-{ 
-    body
-    {
-        grid-template-rows: 40vh 60vh;
-        
-    }
-} */
 
 @media screen and (max-height: 415px)
 { 
@@ -263,7 +249,6 @@ pre
 #loading
 {
     color: #ffffff;
-    /* text-align: center; */
     margin-left: 10px;
     /* padding-bottom: 10px; */
 }
@@ -298,10 +283,10 @@ pre
 /* input[type="text"] { outline-style: none; }
 input:focus { outline: 0; } */
 
-form textarea#text:focus
+/* form textarea#text:focus
 {
     outline-style: 0 !important;
-}
+} */
 
 #form textarea:disabled
 {
