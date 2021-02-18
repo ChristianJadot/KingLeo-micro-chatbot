@@ -27,16 +27,60 @@ body
 }
 /*Pour*/
 
-@media screen and (max-height: 780px)
+@media screen and (max-height: 785px)
 { 
     body
     {
-        grid-template-rows: 35vh 65vh;
+        grid-template-rows: 25vh 75vh;
         
     }
 } 
 
-@media screen and (max-height: 465px)
+@media screen and (max-height: 685px)
+{ 
+    body
+    {
+        grid-template-rows: 27vh 73vh;
+        
+    }
+}
+
+@media screen and (max-height: 585px)
+{ 
+    body
+    {
+        grid-template-rows: 32vh 68vh;
+        
+    }
+}
+
+@media screen and (max-height: 485px)
+{ 
+    body
+    {
+        grid-template-rows: 38vh 62vh;
+        
+    }
+}
+/* @media screen and (max-height: 465px)
+{ 
+    body
+    {
+        grid-template-rows: 40vh 60vh;
+        
+    }
+} */
+
+@media screen and (max-height: 415px)
+{ 
+    body
+    {
+        grid-template-rows: 45vh 55vh;
+        
+    }
+}
+
+@media screen and (max-height: 350px)
 { 
     body
     {
@@ -45,6 +89,41 @@ body
     }
 }
 
+@media screen and (max-height: 315px)
+{ 
+    body
+    {
+        grid-template-rows: 55vh 45vh;
+        
+    }
+}
+
+@media screen and (max-height: 290px)
+{ 
+    body
+    {
+        grid-template-rows: 60vh 40vh;
+        
+    }
+}
+
+@media screen and (max-height: 265px)
+{ 
+    body
+    {
+        grid-template-rows: 62vh 38vh;
+        
+    }
+}
+
+@media screen and (max-height: 250px)
+{ 
+    body
+    {
+        grid-template-rows: 65vh 35vh;
+        
+    }
+}
 
 main
 {
